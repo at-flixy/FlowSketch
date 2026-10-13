@@ -175,6 +175,7 @@ Tauri build, notices, package manifest checks and ZIP readback. Those commands
 are already available above, but are not implied by a green default CI run.
 
 Do not invoke `desktop:dev`, native file pickers, WebDriver E2E or the CDP smoke
-test in these headless gates. A passing hosted build checks compilation,
-protocol/logic tests and package consistency; GUI behavior, packaged-origin
+test in these headless gates. A passing hosted build checks dependency
+installation, frontend compilation and the covered protocol/logic invariants;
+package manifest/ZIP consistency, GUI behavior, packaged-origin
 Worker behavior, DPI and clean-machine installation remain separate gates.
