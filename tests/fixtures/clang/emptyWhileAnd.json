@@ -1,0 +1,174 @@
+{
+  "id": "emptyWhileAnd",
+  "title": "emptyWhileAnd",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "emptyWhileAnd.cpp",
+        "begin": {
+          "offset": 33,
+          "line": 1,
+          "column": 34
+        },
+        "end": {
+          "offset": 50,
+          "line": 1,
+          "column": 51
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "emptyWhileAnd.cpp",
+        "begin": {
+          "offset": 33,
+          "line": 1,
+          "column": 34
+        },
+        "end": {
+          "offset": 50,
+          "line": 1,
+          "column": 51
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "decision",
+      "label": "a",
+      "sourceRange": {
+        "file": "emptyWhileAnd.cpp",
+        "begin": {
+          "offset": 40,
+          "line": 1,
+          "column": 41
+        },
+        "end": {
+          "offset": 41,
+          "line": 1,
+          "column": 42
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclRefExpr"
+      },
+      "originalText": "a",
+      "astKind": "DeclRefExpr",
+      "reachable": true
+    },
+    {
+      "id": "n4",
+      "kind": "decision",
+      "label": "b",
+      "sourceRange": {
+        "file": "emptyWhileAnd.cpp",
+        "begin": {
+          "offset": 45,
+          "line": 1,
+          "column": 46
+        },
+        "end": {
+          "offset": 46,
+          "line": 1,
+          "column": 47
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclRefExpr"
+      },
+      "originalText": "b",
+      "astKind": "DeclRefExpr",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n4",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "target": "n1",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "target": "n3",
+      "label": "Да",
+      "role": "true",
+      "layoutHint": "back",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "target": "n1",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e5",
+      "source": "n2",
+      "target": "n3",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

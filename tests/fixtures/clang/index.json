@@ -1,0 +1,90 @@
+{
+  "results": [
+    {
+      "id": "sumOdd",
+      "graphFile": "tests/fixtures/clang/sumOdd.json"
+    },
+    {
+      "id": "forContinue",
+      "graphFile": "tests/fixtures/clang/forContinue.json"
+    },
+    {
+      "id": "whileContinue",
+      "graphFile": "tests/fixtures/clang/whileContinue.json"
+    },
+    {
+      "id": "doContinue",
+      "graphFile": "tests/fixtures/clang/doContinue.json"
+    },
+    {
+      "id": "nestedBreak",
+      "graphFile": "tests/fixtures/clang/nestedBreak.json"
+    },
+    {
+      "id": "switchFallthrough",
+      "graphFile": "tests/fixtures/clang/switchFallthrough.json"
+    },
+    {
+      "id": "switchNoDefault",
+      "graphFile": "tests/fixtures/clang/switchNoDefault.json"
+    },
+    {
+      "id": "switchContinue",
+      "graphFile": "tests/fixtures/clang/switchContinue.json"
+    },
+    {
+      "id": "shortCircuitAnd",
+      "graphFile": "tests/fixtures/clang/shortCircuitAnd.json"
+    },
+    {
+      "id": "shortCircuitOr",
+      "graphFile": "tests/fixtures/clang/shortCircuitOr.json"
+    },
+    {
+      "id": "earlyReturn",
+      "graphFile": "tests/fixtures/clang/earlyReturn.json"
+    },
+    {
+      "id": "implicitMain",
+      "graphFile": "tests/fixtures/clang/implicitMain.json"
+    },
+    {
+      "id": "ifElse",
+      "graphFile": "tests/fixtures/clang/ifElse.json"
+    },
+    {
+      "id": "utf8Offsets",
+      "graphFile": "tests/fixtures/clang/utf8Offsets.json"
+    },
+    {
+      "id": "emptyWhile",
+      "graphFile": "tests/fixtures/clang/emptyWhile.json"
+    },
+    {
+      "id": "emptyWhileAnd",
+      "graphFile": "tests/fixtures/clang/emptyWhileAnd.json"
+    },
+    {
+      "id": "emptyForNoIncrement",
+      "graphFile": "tests/fixtures/clang/emptyForNoIncrement.json"
+    },
+    {
+      "id": "forContinueNoIncrement",
+      "graphFile": "tests/fixtures/clang/forContinueNoIncrement.json"
+    },
+    {
+      "id": "emptyDo",
+      "graphFile": "tests/fixtures/clang/emptyDo.json"
+    },
+    {
+      "id": "emptyIfWhile",
+      "graphFile": "tests/fixtures/clang/emptyIfWhile.json"
+    },
+    {
+      "id": "emptyForever",
+      "graphFile": "tests/fixtures/clang/emptyForever.json"
+    }
+  ],
+  "provenance": "Stage 1 real Clang graphs; see docs/clang-layout-stage1.json. These graph snapshots allow layout tests without the native SDK.",
+  "schemaVersion": 1
+}

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const manifest=JSON.parse(fs.readFileSync(path.join(here,'toolchain.json'),'utf8').replace(/^\uFEFF/,''));
+const root=manifest.toolchainRoot;
+const source=JSON.parse(fs.readFileSync(path.join(here,'fixtures.json'),'utf8'))[0].source;
+const file=path.join(here,'sumOdd.cpp');fs.writeFileSync(file,source);
+const env={SystemRoot:process.env.SystemRoot,windir:process.env.SystemRoot,TEMP:here,TMP:here,PATH:path.join(root,'bin')+';'+path.join(process.env.SystemRoot,'System32')};
+const base=['--no-default-config','--target=x86_64-w64-windows-gnu','--sysroot='+root,'-resource-dir='+path.join(root,'lib','clang','23'),'-nostdinc','-nostdinc++','-isystem',path.join(root,'include','c++','v1'),'-isystem',path.join(root,'lib','clang','23','include'),'-isystem',path.join(root,'include'),'-std=c++17','-pedantic-errors','-fno-color-diagnostics'];
+const ast=spawnSync(manifest.executable,[...base,'-fsyntax-only','-Xclang','-ast-dump=json','-Xclang','-ast-dump-filter=sumOdd',file],{env,encoding:'utf8',maxBuffer:32*1024*1024});
+fs.writeFileSync(path.join(here,'first.ast.json'),ast.stdout);fs.writeFileSync(path.join(here,'first.ast.stderr.txt'),ast.stderr);
+console.log(JSON.stringify({astStatus:ast.status,astBytes:ast.stdout.length,stderr:ast.stderr}));
+const cfg=spawnSync(manifest.executable,[...base,'--analyze','-Xclang','-analyzer-checker=debug.DumpCFG', '-Xclang','-analyze-function=sumOdd(int)','-o',path.join(here,'first.plist'),file],{env,encoding:'utf8',maxBuffer:32*1024*1024});
+fs.writeFileSync(path.join(here,'first.cfg.txt'),cfg.stderr);console.log(JSON.stringify({cfgStatus:cfg.status,cfg:cfg.stderr}));
+if(ast.status!==0||cfg.status!==0)process.exitCode=1;

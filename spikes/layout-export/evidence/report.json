@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-12T18:42:23.265Z",
+  "scope": "Hand-authored graph layout/export spike, not C++ analyzer or Tauri packaging validation",
+  "environment": {
+    "node": "v24.11.1",
+    "platform": "win32",
+    "osRelease": "10.0.26100",
+    "arch": "x64",
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+    "logicalCpuCount": 8,
+    "ramGiB": 15.71
+  },
+  "font": {
+    "family": "Liberation Sans",
+    "postscriptName": "LiberationSans",
+    "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+    "unitsPerEm": 2048
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "elkjs": "0.12.0",
+    "fontkit": "2.0.4",
+    "pdfkit": "0.20.2"
+  },
+  "cases": [
+    {
+      "id": "switch-fallthrough",
+      "expectedNodes": 7,
+      "expectedEdges": 8,
+      "actualNodes": 7,
+      "actualEdges": 8,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "e64b0c57feb2cc09e06b9a2ee92a5d6e0a13a6140fab99859c5c0e72052775b2",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 1.318,
+        "totalMs": 245.912
+      },
+      "repeatTiming": {
+        "measurementMs": 0.695,
+        "totalMs": 257.204
+      },
+      "bounds": [
+        489,
+        824
+      ],
+      "russianTextPresent": true,
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\switch-fallthrough.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\switch-fallthrough.svg",
+          "pdf": "spikes\\layout-export\\evidence\\switch-fallthrough.pdf",
+          "png": "spikes\\layout-export\\evidence\\switch-fallthrough.png"
+        },
+        "sceneDigest": "e64b0c57feb2cc09e06b9a2ee92a5d6e0a13a6140fab99859c5c0e72052775b2",
+        "png": {
+          "width": 489,
+          "height": 824,
+          "ms": 9.745
+        },
+        "pdfMs": 8.326,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      },
+      "readback": {
+        "svgUnicodeLabelsEqual": true,
+        "svgNoForeignObject": true,
+        "svgNoExternalResources": true,
+        "jsonSceneDigestEqual": true,
+        "pngSignatureCorrect": true
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          366.75,
+          618
+        ],
+        "pngSize": [
+          489,
+          824
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.95051,
+        "meanAbsoluteRgbDifference": 1.05229,
+        "pdfRendered": "spikes\\layout-export\\evidence\\switch-fallthrough.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      }
+    },
+    {
+      "id": "nested-branches",
+      "expectedNodes": 10,
+      "expectedEdges": 12,
+      "actualNodes": 10,
+      "actualEdges": 12,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "fb5576a5166c68012cfd3b8259a63e0efe903c9f621de7a01e2e8288fb08fee6",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 1.38,
+        "totalMs": 256.35
+      },
+      "repeatTiming": {
+        "measurementMs": 1.323,
+        "totalMs": 261.381
+      },
+      "bounds": [
+        770,
+        876
+      ],
+      "russianTextPresent": true,
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\nested-branches.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\nested-branches.svg",
+          "pdf": "spikes\\layout-export\\evidence\\nested-branches.pdf",
+          "png": "spikes\\layout-export\\evidence\\nested-branches.png"
+        },
+        "sceneDigest": "fb5576a5166c68012cfd3b8259a63e0efe903c9f621de7a01e2e8288fb08fee6",
+        "png": {
+          "width": 770,
+          "height": 876,
+          "ms": 13.431
+        },
+        "pdfMs": 8.51,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      },
+      "readback": {
+        "svgUnicodeLabelsEqual": true,
+        "svgNoForeignObject": true,
+        "svgNoExternalResources": true,
+        "jsonSceneDigestEqual": true,
+        "pngSignatureCorrect": true
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          577.5,
+          657
+        ],
+        "pngSize": [
+          770,
+          876
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.964892,
+        "meanAbsoluteRgbDifference": 0.819385,
+        "pdfRendered": "spikes\\layout-export\\evidence\\nested-branches.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      }
+    },
+    {
+      "id": "long-russian",
+      "expectedNodes": 5,
+      "expectedEdges": 5,
+      "actualNodes": 5,
+      "actualEdges": 5,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "b5300deb0adc1fe21390c2ac40e8d900b42fa3786d98e249deb3f062e58a2711",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 5.352,
+        "totalMs": 247.144
+      },
+      "repeatTiming": {
+        "measurementMs": 4.955,
+        "totalMs": 268.527
+      },
+      "bounds": [
+        706,
+        804
+      ],
+      "russianTextPresent": true,
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\long-russian.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\long-russian.svg",
+          "pdf": "spikes\\layout-export\\evidence\\long-russian.pdf",
+          "png": "spikes\\layout-export\\evidence\\long-russian.png"
+        },
+        "sceneDigest": "b5300deb0adc1fe21390c2ac40e8d900b42fa3786d98e249deb3f062e58a2711",
+        "png": {
+          "width": 706,
+          "height": 804,
+          "ms": 14.867
+        },
+        "pdfMs": 17.236,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      },
+      "readback": {
+        "svgUnicodeLabelsEqual": true,
+        "svgNoForeignObject": true,
+        "svgNoExternalResources": true,
+        "jsonSceneDigestEqual": true,
+        "pngSignatureCorrect": true
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          529.5,
+          603
+        ],
+        "pngSize": [
+          706,
+          804
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.904118,
+        "meanAbsoluteRgbDifference": 1.070073,
+        "pdfRendered": "spikes\\layout-export\\evidence\\long-russian.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      }
+    },
+    {
+      "id": "workload-50",
+      "expectedNodes": 50,
+      "expectedEdges": 86,
+      "actualNodes": 50,
+      "actualEdges": 86,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "ffbb3edc6a8d0ac668fa0b27357533a14de58fd2efb97639e5564d4eb81947a1",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 7.584,
+        "totalMs": 303.479
+      },
+      "repeatTiming": {
+        "measurementMs": 6.505,
+        "totalMs": 291.666
+      },
+      "bounds": [
+        4319,
+        1344
+      ],
+      "russianTextPresent": true,
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\workload-50.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\workload-50.svg",
+          "pdf": "spikes\\layout-export\\evidence\\workload-50.pdf",
+          "png": "spikes\\layout-export\\evidence\\workload-50.png"
+        },
+        "sceneDigest": "ffbb3edc6a8d0ac668fa0b27357533a14de58fd2efb97639e5564d4eb81947a1",
+        "png": {
+          "width": 4319,
+          "height": 1344,
+          "ms": 102.837
+        },
+        "pdfMs": 38.002,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      },
+      "readback": {
+        "svgUnicodeLabelsEqual": true,
+        "svgNoForeignObject": true,
+        "svgNoExternalResources": true,
+        "jsonSceneDigestEqual": true,
+        "pngSignatureCorrect": true
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          3239.25,
+          1008
+        ],
+        "pngSize": [
+          4319,
+          1344
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.951376,
+        "meanAbsoluteRgbDifference": 0.58283,
+        "pdfRendered": "spikes\\layout-export\\evidence\\workload-50.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      }
+    },
+    {
+      "id": "workload-200",
+      "expectedNodes": 200,
+      "expectedEdges": 353,
+      "actualNodes": 200,
+      "actualEdges": 353,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "5b7a4f3da08579085d848e2467a89539740be7a5bbaff6ffdceb715064a30794",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 46.371,
+        "totalMs": 595.24
+      },
+      "repeatTiming": {
+        "measurementMs": 21.64,
+        "totalMs": 499.654
+      },
+      "bounds": [
+        15899,
+        4776
+      ],
+      "russianTextPresent": true,
+      "exportBlock": {
+        "code": "PNG_SIZE_LIMIT",
+        "message": "15899×4776",
+        "notPassed": "PNG 1x full-scene raster export"
+      },
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\workload-200.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\workload-200.svg",
+          "pdf": "spikes\\layout-export\\evidence\\workload-200.pdf"
+        },
+        "sceneDigest": "5b7a4f3da08579085d848e2467a89539740be7a5bbaff6ffdceb715064a30794",
+        "png": null,
+        "pdfMs": 151.71,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      }
+    },
+    {
+      "id": "sumOdd-continue",
+      "expectedNodes": 9,
+      "expectedEdges": 10,
+      "actualNodes": 9,
+      "actualEdges": 10,
+      "status": "ready",
+      "diagnostics": [],
+      "sceneDigest": "addf9149fe6b0f826ae158553237606dfd41c6bcba4dceae980811180aaaee1a",
+      "deterministicRepeat": true,
+      "inputUnchanged": true,
+      "timings": {
+        "measurementMs": 7.07,
+        "totalMs": 278.728
+      },
+      "repeatTiming": {
+        "measurementMs": 1.298,
+        "totalMs": 247.445
+      },
+      "bounds": [
+        574,
+        902
+      ],
+      "russianTextPresent": true,
+      "export": {
+        "paths": {
+          "scene": "spikes\\layout-export\\evidence\\sumOdd-continue.scene.json",
+          "svg": "spikes\\layout-export\\evidence\\sumOdd-continue.svg",
+          "pdf": "spikes\\layout-export\\evidence\\sumOdd-continue.pdf",
+          "png": "spikes\\layout-export\\evidence\\sumOdd-continue.png"
+        },
+        "sceneDigest": "addf9149fe6b0f826ae158553237606dfd41c6bcba4dceae980811180aaaee1a",
+        "png": {
+          "width": 574,
+          "height": 902,
+          "ms": 10.469
+        },
+        "pdfMs": 18.966,
+        "textPolicy": "glyph outlines from bundled font; SVG metadata keeps original Unicode; PDF text is not selectable",
+        "pdfPolicy": "single native-sized vector page; A4/A3 pagination and minimum print text size not implemented in this spike"
+      },
+      "readback": {
+        "svgUnicodeLabelsEqual": true,
+        "svgNoForeignObject": true,
+        "svgNoExternalResources": true,
+        "jsonSceneDigestEqual": true,
+        "pngSignatureCorrect": true
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          430.5,
+          676.5
+        ],
+        "pngSize": [
+          574,
+          902
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.976431,
+        "meanAbsoluteRgbDifference": 0.986801,
+        "pdfRendered": "spikes\\layout-export\\evidence\\sumOdd-continue.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      }
+    }
+  ],
+  "limits": {
+    "pngSide": 16384,
+    "pngPixels": 64000000,
+    "layoutTimeoutMs": 5000
+  },
+  "notVerified": [
+    "A4/A3 print pagination and 9pt minimum",
+    "React Flow interactive rendering and performance",
+    "Tauri/Rust packaging",
+    "arbitrary CFGs, manual locked positions, font styles and every crossing",
+    "reference-machine NFR targets or 20-run p95"
+  ],
+  "summary": {
+    "ready": 6,
+    "rejected": 0,
+    "completeExports": 5,
+    "explicitRasterRejections": 1,
+    "allDeterministic": true,
+    "allInputsUnchanged": true
+  }
+}

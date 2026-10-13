@@ -1,0 +1,272 @@
+{
+  "id": "shortCircuitOr",
+  "title": "shortCircuitOr",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "offset": 68,
+          "line": 1,
+          "column": 69
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "offset": 68,
+          "line": 1,
+          "column": 69
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "process",
+      "label": "return 0",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 58,
+          "line": 1,
+          "column": 59
+        },
+        "end": {
+          "offset": 66,
+          "line": 1,
+          "column": 67
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return 0",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    },
+    {
+      "id": "n4",
+      "kind": "decision",
+      "label": "a",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 38,
+          "line": 1,
+          "column": 39
+        },
+        "end": {
+          "offset": 39,
+          "line": 1,
+          "column": 40
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclRefExpr"
+      },
+      "originalText": "a",
+      "astKind": "DeclRefExpr",
+      "reachable": true
+    },
+    {
+      "id": "n5",
+      "kind": "decision",
+      "label": "++b>0",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 43,
+          "line": 1,
+          "column": 44
+        },
+        "end": {
+          "offset": 48,
+          "line": 1,
+          "column": 49
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "++b>0",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n6",
+      "kind": "process",
+      "label": "return b",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 49,
+          "line": 1,
+          "column": 50
+        },
+        "end": {
+          "offset": 57,
+          "line": 1,
+          "column": 58
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return b",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    },
+    {
+      "id": "n7",
+      "kind": "process",
+      "label": "int b=0",
+      "sourceRange": {
+        "file": "shortCircuitOr.cpp",
+        "begin": {
+          "offset": 27,
+          "line": 1,
+          "column": 28
+        },
+        "end": {
+          "offset": 35,
+          "line": 1,
+          "column": 36
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int b=0;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e2",
+      "source": "n6",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "target": "n6",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "target": "n5",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e5",
+      "source": "n5",
+      "target": "n6",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e6",
+      "source": "n5",
+      "target": "n3",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e7",
+      "source": "n7",
+      "target": "n4",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e8",
+      "source": "n2",
+      "target": "n7",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

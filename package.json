@@ -1,0 +1,57 @@
+{
+  "name": "flowsketch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Windows desktop C++ flowchart prototype",
+  "scripts": {
+    "spike:layout-export": "node spikes/layout-export/run.mjs",
+    "test:layout-export": "node --test spikes/layout-export/test.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run src/diagram",
+    "tauri": "tauri",
+    "desktop:dev": "pwsh -NoProfile -File scripts/tauri.ps1 dev",
+    "desktop:build": "pwsh -NoProfile -File scripts/tauri.ps1 build"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "@resvg/resvg-js": "2.6.2",
+    "@tauri-apps/api": "2.12.3",
+    "@tauri-apps/plugin-dialog": "2.8.2",
+    "elkjs": "0.12.0",
+    "fontkit": "2.0.4",
+    "lucide-react": "1.55.0",
+    "monaco-editor": "0.57.0",
+    "pdfkit": "0.20.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.12.2",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.4"
+  },
+  "overrides": {
+    "dompurify": "3.4.17"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/at-flixy/FlowSketch.git"
+  },
+  "homepage": "https://github.com/at-flixy/FlowSketch",
+  "bugs": {
+    "url": "https://github.com/at-flixy/FlowSketch/issues"
+  },
+  "engines": {
+    "node": "^24.0.0 || >=26.0.0"
+  }
+}

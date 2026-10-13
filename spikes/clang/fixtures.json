@@ -1,0 +1,291 @@
+[
+  {
+    "id": "sumOdd",
+    "name": "sumOdd",
+    "feature": "for + continue",
+    "source": "int sumOdd(int n) {\n  int s = 0;\n  for (int i = 1; i <= n; ++i) {\n    if (i % 2 == 0) continue;\n    s += i;\n  }\n  return s;\n}\n",
+    "expect": [
+      [
+        "continue",
+        "++i"
+      ],
+      [
+        "++i",
+        "i <= n"
+      ],
+      [
+        "s += i",
+        "++i"
+      ]
+    ]
+  },
+  {
+    "id": "forContinue",
+    "name": "forContinue",
+    "feature": "continue -> increment",
+    "source": "int forContinue(int n) { int s=0; for(int i=0;i<n;++i){if(i==1)continue; s+=i;} return s; }\n",
+    "expect": [
+      [
+        "continue",
+        "++i"
+      ],
+      [
+        "++i",
+        "i<n"
+      ]
+    ]
+  },
+  {
+    "id": "whileContinue",
+    "name": "whileContinue",
+    "feature": "while continue -> condition",
+    "source": "int whileContinue(int n){int x=0;while(x<n){++x;if(x==1)continue;x+=1;}return x;}\n",
+    "expect": [
+      [
+        "continue",
+        "x<n"
+      ]
+    ]
+  },
+  {
+    "id": "doContinue",
+    "name": "doContinue",
+    "feature": "do while continue -> bottom test",
+    "source": "int doContinue(int n){int x=0;do{++x;if(x<2)continue;x+=1;}while(x<n);return x;}\n",
+    "expect": [
+      [
+        "continue",
+        "x<n"
+      ],
+      [
+        "x<n",
+        "++x"
+      ]
+    ]
+  },
+  {
+    "id": "nestedBreak",
+    "name": "nestedBreak",
+    "feature": "nearest nested break",
+    "source": "int nestedBreak(){int s=0;for(int i=0;i<2;++i){for(int j=0;j<3;++j){if(j==1)break;++s;}s+=10;}return s;}\n",
+    "expect": [
+      [
+        "break",
+        "s+=10"
+      ]
+    ]
+  },
+  {
+    "id": "switchFallthrough",
+    "name": "switchFallthrough",
+    "feature": "switch fallthrough",
+    "source": "int switchFallthrough(int x){int y=0;switch(x){case 1:y+=1;[[fallthrough]];case 2:y+=2;break;default:y=9;}return y;}\n",
+    "expect": [
+      [
+        "y+=1",
+        "y+=2"
+      ],
+      [
+        "break",
+        "return y"
+      ]
+    ]
+  },
+  {
+    "id": "switchNoDefault",
+    "name": "switchNoDefault",
+    "feature": "no-match branch",
+    "source": "int switchNoDefault(int x){int y=0;switch(x){case 1:y=7;break;}return y;}\n",
+    "expect": [
+      [
+        "x",
+        "return y",
+        "default"
+      ]
+    ]
+  },
+  {
+    "id": "switchContinue",
+    "name": "switchContinue",
+    "feature": "switch does not capture continue",
+    "source": "int switchContinue(int n){int s=0;for(int i=0;i<n;++i){switch(i){case 0:continue;default:s+=i;}s+=10;}return s;}\n",
+    "expect": [
+      [
+        "continue",
+        "++i"
+      ]
+    ]
+  },
+  {
+    "id": "shortCircuitAnd",
+    "name": "shortCircuitAnd",
+    "feature": "&& RHS guarded",
+    "source": "int shortCircuitAnd(bool a){int b=0;if(a && ++b>0)return b;return 0;}\n",
+    "expect": [
+      [
+        "a",
+        "++b>0",
+        "true"
+      ],
+      [
+        "a",
+        "return 0",
+        "false"
+      ]
+    ]
+  },
+  {
+    "id": "shortCircuitOr",
+    "name": "shortCircuitOr",
+    "feature": "|| RHS guarded",
+    "source": "int shortCircuitOr(bool a){int b=0;if(a || ++b>0)return b;return 0;}\n",
+    "expect": [
+      [
+        "a",
+        "++b>0",
+        "false"
+      ],
+      [
+        "a",
+        "return b",
+        "true"
+      ]
+    ]
+  },
+  {
+    "id": "earlyReturn",
+    "name": "earlyReturn",
+    "feature": "return ends normal flow",
+    "source": "int earlyReturn(int x){if(x<0)return -1;return x;x+=1;}\n",
+    "expect": [
+      [
+        "return -1",
+        "Конец",
+        "return"
+      ],
+      [
+        "return x",
+        "Конец",
+        "return"
+      ]
+    ],
+    "forbid": [
+      [
+        "return x",
+        "x+=1"
+      ]
+    ]
+  },
+  {
+    "id": "implicitMain",
+    "name": "main",
+    "feature": "implicit main return 0",
+    "source": "int main(){int x=1;++x;}\n",
+    "expect": [
+      [
+        "++x",
+        "Конец · return 0"
+      ]
+    ]
+  },
+  {
+    "id": "ifElse",
+    "name": "ifElse",
+    "feature": "if else merge",
+    "source": "int ifElse(int x){if(x>0)x+=1;else x-=1;return x;}\n",
+    "expect": [
+      [
+        "x>0",
+        "x+=1",
+        "true"
+      ],
+      [
+        "x>0",
+        "x-=1",
+        "false"
+      ],
+      [
+        "x+=1",
+        "return x"
+      ],
+      [
+        "x-=1",
+        "return x"
+      ]
+    ]
+  },
+  {
+    "id": "stdlib",
+    "name": "flow_stdlib",
+    "feature": "iostream vector string algorithm cmath syntax smoke",
+    "source": "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\n#include <cmath>\nint flow_stdlib(int n){std::vector<int> v{3,1,2};std::sort(v.begin(),v.end());std::string s=\"Привет\";double x=std::sqrt(4.0)+std::pow(2.0,3.0);std::cout<<s<<v[0]<<x<<std::endl;std::cin>>n;return n+static_cast<int>(v.size());}\n",
+    "skipGraph": true,
+    "skipCfg": true
+  },
+  {
+    "id": "utf8Offsets",
+    "name": "utf8Offsets",
+    "feature": "UTF-8 byte offsets after Russian comment",
+    "source": "int utf8Offsets(int n){\n  // Русский комментарий перед циклом\n  int s=0;\n  for(int i=0;i<n;++i){s+=i;}\n  // Возврат результата\n  return s;\n}\n",
+    "expect": [
+      [
+        "s+=i",
+        "++i"
+      ],
+      [
+        "++i",
+        "i<n"
+      ],
+      [
+        "return s",
+        "Конец",
+        "return"
+      ]
+    ],
+    "expectedLines": [
+      [
+        "i<n",
+        4
+      ],
+      [
+        "return s",
+        6
+      ]
+    ]
+  },
+  {
+    "id": "macroDenied",
+    "name": "macroDenied",
+    "feature": "Macro spelling/expansion rejected by adapter",
+    "source": "#define STEP(v) if((v)>0) ++(v)\nint macroDenied(int x){STEP(x);return x;}\n",
+    "expectedAdapterError": "UnsupportedAstError"
+  },
+  {
+    "id": "syntaxError",
+    "name": "syntaxError",
+    "feature": "Parse errors cannot become graph",
+    "source": "int syntaxError(int x){if(x>0 {return 1;} return 0;}\n",
+    "expectedParseError": true
+  },
+  {
+    "id": "volatileDenied",
+    "name": "volatileDenied",
+    "feature": "volatile cannot enter scalar allowlist",
+    "source": "int volatileDenied(){volatile int x=0;return x;}\n",
+    "expectedAdapterError": "UnsupportedAstError"
+  },
+  {
+    "id": "missingReturn",
+    "name": "missingReturn",
+    "feature": "Werror return-type blocks non-void fallthrough",
+    "source": "int missingReturn(int x){if(x>0)return x;}\n",
+    "expectedParseError": true
+  },
+  {
+    "id": "opaqueDenied",
+    "name": "opaqueDenied",
+    "feature": "Calls need full called-declaration metadata",
+    "source": "int unknown();int opaqueDenied(){return unknown();}\n",
+    "expectedAdapterError": "UnsupportedAstError"
+  }
+]

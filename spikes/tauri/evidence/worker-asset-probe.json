@@ -1,0 +1,159 @@
+{
+  "assets": [
+    {
+      "headers": {
+        "access-control-allow-origin": "http://tauri.localhost",
+        "content-type": "text/javascript"
+      },
+      "length": 376574,
+      "status": 200,
+      "url": "/assets/layout.worker-Cos9RNGm.js"
+    },
+    {
+      "headers": {
+        "access-control-allow-origin": "http://tauri.localhost",
+        "content-type": "text/javascript"
+      },
+      "length": 1595334,
+      "status": 200,
+      "url": "/assets/elk-worker.min-r_yRvuMO.js"
+    },
+    {
+      "headers": {
+        "access-control-allow-origin": "http://tauri.localhost",
+        "content-type": "application/font-sfnt"
+      },
+      "length": 139031,
+      "status": 200,
+      "url": "/assets/LiberationSans-Regular-cbskN6YR.ttf"
+    }
+  ],
+  "errors": [],
+  "resources": [
+    {
+      "duration": 464.3999999985099,
+      "name": "http://tauri.localhost/assets/index-DJlLQICS.js",
+      "type": "script"
+    },
+    {
+      "duration": 33.100000001490116,
+      "name": "http://tauri.localhost/assets/index-Ct6ODTaW.css",
+      "type": "link"
+    },
+    {
+      "duration": 4,
+      "name": "http://tauri.localhost/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 3.800000004470349,
+      "name": "http://tauri.localhost/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 6.700000002980232,
+      "name": "http://tauri.localhost/favicon.ico",
+      "type": "other"
+    },
+    {
+      "duration": 6.600000001490116,
+      "name": "http://tauri.localhost/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 24.600000001490116,
+      "name": "http://ipc.localhost/plugin%3Aevent%7Clisten",
+      "type": "fetch"
+    },
+    {
+      "duration": 3.800000004470349,
+      "name": "http://tauri.localhost/assets/cpp-C7h46wYY.js",
+      "type": "script"
+    },
+    {
+      "duration": 2.799999997019768,
+      "name": "http://tauri.localhost/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 2.799999997019768,
+      "name": "http://tauri.localhost/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 4,
+      "name": "http://ipc.localhost/runtime_info",
+      "type": "fetch"
+    },
+    {
+      "duration": 18.799999997019768,
+      "name": "http://ipc.localhost/open_cpp",
+      "type": "fetch"
+    },
+    {
+      "duration": 2.700000002980232,
+      "name": "http://tauri.localhost/assets/jetbrains-mono-cyrillic-400-normal-BEIGL1Tu.woff2",
+      "type": "css"
+    },
+    {
+      "duration": 600.2000000029802,
+      "name": "http://ipc.localhost/analyze",
+      "type": "fetch"
+    },
+    {
+      "duration": 447.5,
+      "name": "http://ipc.localhost/analyze",
+      "type": "fetch"
+    },
+    {
+      "duration": 35.399999998509884,
+      "name": "http://tauri.localhost/assets/LiberationSans-Regular-cbskN6YR.ttf",
+      "type": "fetch"
+    },
+    {
+      "duration": -14.100000001490116,
+      "name": "http://tauri.localhost/assets/layout.worker-Cos9RNGm.js",
+      "type": "other"
+    },
+    {
+      "duration": 43.10000000149011,
+      "name": "http://tauri.localhost/assets/layout.worker-Cos9RNGm.js",
+      "type": "fetch"
+    },
+    {
+      "duration": 145.30000000447035,
+      "name": "http://tauri.localhost/assets/elk-worker.min-r_yRvuMO.js",
+      "type": "fetch"
+    },
+    {
+      "duration": 29.600000001490116,
+      "name": "http://tauri.localhost/assets/LiberationSans-Regular-cbskN6YR.ttf",
+      "type": "fetch"
+    },
+    {
+      "duration": 213,
+      "name": "http://tauri.localhost/assets/elk-worker.min-r_yRvuMO.js",
+      "type": "fetch"
+    },
+    {
+      "duration": -9.899999998509884,
+      "name": "http://tauri.localhost/assets/elk-worker.min-r_yRvuMO.js",
+      "type": "other"
+    },
+    {
+      "duration": 54.60000000149011,
+      "name": "http://tauri.localhost/assets/layout.worker-Cos9RNGm.js",
+      "type": "fetch"
+    },
+    {
+      "duration": 187.60000000149012,
+      "name": "http://tauri.localhost/assets/elk-worker.min-r_yRvuMO.js",
+      "type": "fetch"
+    },
+    {
+      "duration": 37.60000000149011,
+      "name": "http://tauri.localhost/assets/LiberationSans-Regular-cbskN6YR.ttf",
+      "type": "fetch"
+    }
+  ]
+}

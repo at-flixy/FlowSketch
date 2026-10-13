@@ -1,0 +1,22 @@
+name: Bug report
+description: Reproduce a code, diagram, desktop or export problem
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and actual behavior. English or Russian is welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal example and steps
+      description: For flow problems, include a minimal C++ function and the expected transitions. Remove confidential source.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: Commit/version, Windows/WebView2 versions, build commands, screenshots or diagnostic text.

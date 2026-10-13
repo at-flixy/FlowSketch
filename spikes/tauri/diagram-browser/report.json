@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Bishkek",
+  "runtime": "Installed Microsoft Edge, headless, bundled Playwright JS",
+  "browserVersion": "155.0.4283.45",
+  "fixture": "spikes/clang/sumOdd.graph.json",
+  "nativeAnalyzerMocked": false,
+  "liveCppAnalysisVerified": false,
+  "cases": [
+    {
+      "id": "dev",
+      "url": "http://127.0.0.1:1420/src/diagram/browser-harness.html",
+      "initialDom": "Сцена готова",
+      "initial": {
+        "status": "ready",
+        "width": 574,
+        "height": 1006,
+        "nodes": 10,
+        "edges": 11,
+        "primitives": 101,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "unitsPerEm": 2048,
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f"
+        },
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "diagnostics": [],
+        "requestId": "2eec68d4-f1b4-44be-a2a9-a4e973bec45e",
+        "modelRevision": 1,
+        "styleRevision": 1,
+        "timings": {
+          "measurementMs": 8.1,
+          "totalMs": 1254
+        }
+      },
+      "repeat": {
+        "status": "ready",
+        "width": 574,
+        "height": 1006,
+        "nodes": 10,
+        "edges": 11,
+        "primitives": 101,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "unitsPerEm": 2048,
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f"
+        },
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "diagnostics": [],
+        "requestId": "ac865f4b-bb2c-422e-9bfd-c1c3beb41fae",
+        "modelRevision": 1,
+        "styleRevision": 1,
+        "timings": {
+          "measurementMs": 6.2,
+          "totalMs": 1616.5
+        }
+      },
+      "svg": {
+        "paths": 101,
+        "texts": 0,
+        "metadata": "{\"schemaVersion\":1,\"graphDigest\":\"d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f\",\"styleDigest\":\"1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61\",\"sceneDigest\":\"9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6\",\"modelRevision\":1,\"styleRevision\":1,\"requestId\":\"ac865f4b-bb2c-422e-9bfd-c1c3beb41fae\",\"font\":{\"family\":\"Liberation Sans\",\"postscriptName\":\"LiberationSans\",\"unitsPerEm\":2048,\"sha256\":\"f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f\"},\"coverage\":\"Обычные переходы внутри функции. Внутренние пути вызовов, исключения и скрытые действия объектов не раскрыты.\",\"labels\":[{\"id\":\"n2\",\"label\":\"Начало\",\"originalText\":null,\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":18,\"line\":1,\"column\":19},\"end\":{\"offset\":125,\"line\":8,\"column\":2},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":true,\"originKind\":\"CompoundStmt\"}},{\"id\":\"n10\",\"label\":\"int s = 0\",\"originalText\":\"int s = 0;\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":22,\"line\":2,\"column\":3},\"end\":{\"offset\":32,\"line\":2,\"column\":13},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"DeclStmt\"}},{\"id\":\"n9\",\"label\":\"int i = 1\",\"originalText\":\"int i = 1;\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":40,\"line\":3,\"column\":8},\"end\":{\"offset\":50,\"line\":3,\"column\":18},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"DeclStmt\"}},{\"id\":\"n4\",\"label\":\"i <= n\",\"originalText\":\"i <= n\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":51,\"line\":3,\"column\":19},\"end\":{\"offset\":57,\"line\":3,\"column\":25},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"BinaryOperator\"}},{\"id\":\"n3\",\"label\":\"return s\",\"originalText\":\"return s\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":114,\"line\":7,\"column\":3},\"end\":{\"offset\":122,\"line\":7,\"column\":11},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"ReturnStmt\"}},{\"id\":\"n1\",\"label\":\"Конец\",\"originalText\":null,\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":18,\"line\":1,\"column\":19},\"end\":{\"offset\":125,\"line\":8,\"column\":2},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":true,\"originKind\":\"CompoundStmt\"}},{\"id\":\"n7\",\"label\":\"i % 2 == 0\",\"originalText\":\"i % 2 == 0\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":74,\"line\":4,\"column\":9},\"end\":{\"offset\":84,\"line\":4,\"column\":19},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"BinaryOperator\"}},{\"id\":\"n6\",\"label\":\"s += i\",\"originalText\":\"s += i\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":100,\"line\":5,\"column\":5},\"end\":{\"offset\":106,\"line\":5,\"column\":11},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"CompoundAssignOperator\"}},{\"id\":\"n8\",\"label\":\"continue\",\"originalText\":\"continue\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":86,\"line\":4,\"column\":21},\"end\":{\"offset\":94,\"line\":4,\"column\":29},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"ContinueStmt\"}},{\"id\":\"n5\",\"label\":\"++i\",\"originalText\":\"++i\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":59,\"line\":3,\"column\":27},\"end\":{\"offset\":62,\"line\":3,\"column\":30},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"UnaryOperator\"}}],\"edges\":[{\"id\":\"e1\",\"source\":\"n3\",\"target\":\"n1\",\"label\":\"\",\"role\":\"return\"},{\"id\":\"e2\",\"source\":\"n5\",\"target\":\"n4\",\"label\":\"\",\"role\":\"back\",\"layoutHint\":\"back\"},{\"id\":\"e3\",\"source\":\"n6\",\"target\":\"n5\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e4\",\"source\":\"n8\",\"target\":\"n5\",\"label\":\"\",\"role\":\"continue\"},{\"id\":\"e5\",\"source\":\"n7\",\"target\":\"n8\",\"label\":\"Да\",\"role\":\"true\"},{\"id\":\"e6\",\"source\":\"n7\",\"target\":\"n6\",\"label\":\"Нет\",\"role\":\"false\"},{\"id\":\"e7\",\"source\":\"n4\",\"target\":\"n7\",\"label\":\"Да\",\"role\":\"true\"},{\"id\":\"e8\",\"source\":\"n4\",\"target\":\"n3\",\"label\":\"Нет\",\"role\":\"false\"},{\"id\":\"e9\",\"source\":\"n9\",\"target\":\"n4\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e10\",\"source\":\"n10\",\"target\":\"n9\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e11\",\"source\":\"n2\",\"target\":\"n10\",\"label\":\"\",\"role\":\"normal\"}]}",
+        "errors": 0
+      },
+      "png": [
+        {
+          "scale": 1,
+          "type": "image/png",
+          "bytes": 38427,
+          "width": 574,
+          "height": 1006,
+          "signature": [
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+          ],
+          "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6"
+        },
+        {
+          "scale": 2,
+          "type": "image/png",
+          "bytes": 107201,
+          "width": 1148,
+          "height": 2012,
+          "signature": [
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+          ],
+          "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6"
+        }
+      ],
+      "passed": true,
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    {
+      "id": "production",
+      "url": "http://127.0.0.1:4240/src/diagram/browser-harness.html",
+      "initialDom": "Сцена готова",
+      "initial": {
+        "status": "ready",
+        "width": 574,
+        "height": 1006,
+        "nodes": 10,
+        "edges": 11,
+        "primitives": 101,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "unitsPerEm": 2048,
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f"
+        },
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "diagnostics": [],
+        "requestId": "07284f8b-0699-416d-92cd-03f6f3f2b943",
+        "modelRevision": 1,
+        "styleRevision": 1,
+        "timings": {
+          "measurementMs": 5.7,
+          "totalMs": 433.2
+        }
+      },
+      "repeat": {
+        "status": "ready",
+        "width": 574,
+        "height": 1006,
+        "nodes": 10,
+        "edges": 11,
+        "primitives": 101,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "unitsPerEm": 2048,
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f"
+        },
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "diagnostics": [],
+        "requestId": "8f3af39a-6a70-4f78-b53b-9b4fcade179d",
+        "modelRevision": 1,
+        "styleRevision": 1,
+        "timings": {
+          "measurementMs": 5.9,
+          "totalMs": 283.5
+        }
+      },
+      "svg": {
+        "paths": 101,
+        "texts": 0,
+        "metadata": "{\"schemaVersion\":1,\"graphDigest\":\"d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f\",\"styleDigest\":\"1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61\",\"sceneDigest\":\"9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6\",\"modelRevision\":1,\"styleRevision\":1,\"requestId\":\"8f3af39a-6a70-4f78-b53b-9b4fcade179d\",\"font\":{\"family\":\"Liberation Sans\",\"postscriptName\":\"LiberationSans\",\"unitsPerEm\":2048,\"sha256\":\"f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f\"},\"coverage\":\"Обычные переходы внутри функции. Внутренние пути вызовов, исключения и скрытые действия объектов не раскрыты.\",\"labels\":[{\"id\":\"n2\",\"label\":\"Начало\",\"originalText\":null,\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":18,\"line\":1,\"column\":19},\"end\":{\"offset\":125,\"line\":8,\"column\":2},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":true,\"originKind\":\"CompoundStmt\"}},{\"id\":\"n10\",\"label\":\"int s = 0\",\"originalText\":\"int s = 0;\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":22,\"line\":2,\"column\":3},\"end\":{\"offset\":32,\"line\":2,\"column\":13},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"DeclStmt\"}},{\"id\":\"n9\",\"label\":\"int i = 1\",\"originalText\":\"int i = 1;\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":40,\"line\":3,\"column\":8},\"end\":{\"offset\":50,\"line\":3,\"column\":18},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"DeclStmt\"}},{\"id\":\"n4\",\"label\":\"i <= n\",\"originalText\":\"i <= n\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":51,\"line\":3,\"column\":19},\"end\":{\"offset\":57,\"line\":3,\"column\":25},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"BinaryOperator\"}},{\"id\":\"n3\",\"label\":\"return s\",\"originalText\":\"return s\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":114,\"line\":7,\"column\":3},\"end\":{\"offset\":122,\"line\":7,\"column\":11},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"ReturnStmt\"}},{\"id\":\"n1\",\"label\":\"Конец\",\"originalText\":null,\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":18,\"line\":1,\"column\":19},\"end\":{\"offset\":125,\"line\":8,\"column\":2},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":true,\"originKind\":\"CompoundStmt\"}},{\"id\":\"n7\",\"label\":\"i % 2 == 0\",\"originalText\":\"i % 2 == 0\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":74,\"line\":4,\"column\":9},\"end\":{\"offset\":84,\"line\":4,\"column\":19},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"BinaryOperator\"}},{\"id\":\"n6\",\"label\":\"s += i\",\"originalText\":\"s += i\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":100,\"line\":5,\"column\":5},\"end\":{\"offset\":106,\"line\":5,\"column\":11},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"CompoundAssignOperator\"}},{\"id\":\"n8\",\"label\":\"continue\",\"originalText\":\"continue\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":86,\"line\":4,\"column\":21},\"end\":{\"offset\":94,\"line\":4,\"column\":29},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"ContinueStmt\"}},{\"id\":\"n5\",\"label\":\"++i\",\"originalText\":\"++i\",\"sourceRange\":{\"file\":\"sumOdd.cpp\",\"begin\":{\"offset\":59,\"line\":3,\"column\":27},\"end\":{\"offset\":62,\"line\":3,\"column\":30},\"endExclusive\":true,\"offsetEncoding\":\"utf8-bytes\",\"columnEncoding\":\"utf8-bytes\",\"synthetic\":false,\"originKind\":\"UnaryOperator\"}}],\"edges\":[{\"id\":\"e1\",\"source\":\"n3\",\"target\":\"n1\",\"label\":\"\",\"role\":\"return\"},{\"id\":\"e2\",\"source\":\"n5\",\"target\":\"n4\",\"label\":\"\",\"role\":\"back\",\"layoutHint\":\"back\"},{\"id\":\"e3\",\"source\":\"n6\",\"target\":\"n5\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e4\",\"source\":\"n8\",\"target\":\"n5\",\"label\":\"\",\"role\":\"continue\"},{\"id\":\"e5\",\"source\":\"n7\",\"target\":\"n8\",\"label\":\"Да\",\"role\":\"true\"},{\"id\":\"e6\",\"source\":\"n7\",\"target\":\"n6\",\"label\":\"Нет\",\"role\":\"false\"},{\"id\":\"e7\",\"source\":\"n4\",\"target\":\"n7\",\"label\":\"Да\",\"role\":\"true\"},{\"id\":\"e8\",\"source\":\"n4\",\"target\":\"n3\",\"label\":\"Нет\",\"role\":\"false\"},{\"id\":\"e9\",\"source\":\"n9\",\"target\":\"n4\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e10\",\"source\":\"n10\",\"target\":\"n9\",\"label\":\"\",\"role\":\"normal\"},{\"id\":\"e11\",\"source\":\"n2\",\"target\":\"n10\",\"label\":\"\",\"role\":\"normal\"}]}",
+        "errors": 0
+      },
+      "png": [
+        {
+          "scale": 1,
+          "type": "image/png",
+          "bytes": 38427,
+          "width": 574,
+          "height": 1006,
+          "signature": [
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+          ],
+          "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6"
+        },
+        {
+          "scale": 2,
+          "type": "image/png",
+          "bytes": 107201,
+          "width": 1148,
+          "height": 2012,
+          "signature": [
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+          ],
+          "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6"
+        }
+      ],
+      "passed": true,
+      "pageErrors": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    }
+  ],
+  "passed": true
+}

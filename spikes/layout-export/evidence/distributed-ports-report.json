@@ -1,0 +1,19 @@
+{
+  "experiment": "Only 200-node high-fanout workload; distribute distinct fixed ports along safe rectangle/capsule top/bottom sides instead of sharing one point. Not promoted to default or general CFG support.",
+  "bounds": [
+    15020,
+    6052
+  ],
+  "timing": {
+    "measurementMs": 41.076,
+    "totalMs": 600.929
+  },
+  "sceneDigest": "53e92c224d3eb3f6bba412f590b37d7ace5ceb120a4c895df2a69798fdb403bd",
+  "deterministicRepeat": true,
+  "status": "ready",
+  "diagnostics": [],
+  "exportBlock": {
+    "code": "PNG_SIZE_LIMIT",
+    "message": "15020×6052"
+  }
+}

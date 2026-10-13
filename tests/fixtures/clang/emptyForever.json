@@ -1,0 +1,146 @@
+{
+  "id": "emptyForever",
+  "title": "emptyForever",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "emptyForever.cpp",
+        "begin": {
+          "offset": 19,
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "offset": 30,
+          "line": 1,
+          "column": 31
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": false
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "emptyForever.cpp",
+        "begin": {
+          "offset": 19,
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "offset": 30,
+          "line": 1,
+          "column": 31
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "connector",
+      "label": "",
+      "sourceRange": {
+        "file": "emptyForever.cpp",
+        "begin": {
+          "offset": 20,
+          "line": 1,
+          "column": 21
+        },
+        "end": {
+          "offset": 29,
+          "line": 1,
+          "column": 30
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "ForStmt"
+      },
+      "originalText": null,
+      "astKind": "ForStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n3",
+      "label": "",
+      "role": "normal",
+      "layoutHint": "back"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [
+    {
+      "code": "UNREACHABLE_COMPONENT",
+      "nodeId": "n1",
+      "sourceRange": {
+        "file": "emptyForever.cpp",
+        "begin": {
+          "offset": 19,
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "offset": 30,
+          "line": 1,
+          "column": 31
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      }
+    }
+  ],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

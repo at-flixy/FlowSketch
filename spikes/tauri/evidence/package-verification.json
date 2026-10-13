@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T14:30:38.314Z",
+  "prototype": true,
+  "cleanWindowsVerified": false,
+  "testBuild": false,
+  "embeddedUi": true,
+  "headersMatchPinnedProfile": true,
+  "executableSource": "src-tauri\\target\\debug\\flowsketch.exe",
+  "fileCount": 4805,
+  "totalBytes": 181182434,
+  "appSha256": "37e0924e4145a0f45837ce94d5b2831a04d4fa805702a65af9f2ea27562adfb4",
+  "analyzerSha256": "6eb05851a9d0f0c27313cfe6e0f3ac5af18ed57b310be1848faf61c3ea9c2668",
+  "headerFileCount": 4077
+}

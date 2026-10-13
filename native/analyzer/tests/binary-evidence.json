@@ -1,0 +1,17 @@
+{
+  "executable": "native\\analyzer\\build\\bin\\flowsketch-analyzer.exe",
+  "sizeBytes": 35268096,
+  "sha256": "6eb05851a9d0f0c27313cfe6e0f3ac5af18ed57b310be1848faf61c3ea9c2668",
+  "imports": [
+    "KERNEL32.dll",
+    "ADVAPI32.dll",
+    "ntdll.dll",
+    "VERSION.dll",
+    "OLEAUT32.dll",
+    "ole32.dll",
+    "SHELL32.dll"
+  ],
+  "thirdPartyDynamicLibraries": false,
+  "tool": "official SDK llvm-readobj --coff-imports",
+  "cleanWindowsGate": false
+}

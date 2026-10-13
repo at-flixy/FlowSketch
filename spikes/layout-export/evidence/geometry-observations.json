@@ -1,0 +1,60 @@
+{
+  "scope": "Independent observations of written scenes; proper crossing count does not yet validate shared partial-path topology or draw bridges",
+  "createdAt": "2026-10-12T18:45:29.803Z",
+  "records": [
+    {
+      "id": "long-russian",
+      "sceneDigest": "b5300deb0adc1fe21390c2ac40e8d900b42fa3786d98e249deb3f062e58a2711",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 388
+    },
+    {
+      "id": "nested-branches",
+      "sceneDigest": "fb5576a5166c68012cfd3b8259a63e0efe903c9f621de7a01e2e8288fb08fee6",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 100
+    },
+    {
+      "id": "sumOdd-continue",
+      "sceneDigest": "addf9149fe6b0f826ae158553237606dfd41c6bcba4dceae980811180aaaee1a",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 93
+    },
+    {
+      "id": "switch-fallthrough",
+      "sceneDigest": "e64b0c57feb2cc09e06b9a2ee92a5d6e0a13a6140fab99859c5c0e72052775b2",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 121
+    },
+    {
+      "id": "workload-200",
+      "sceneDigest": "5b7a4f3da08579085d848e2467a89539740be7a5bbaff6ffdceb715064a30794",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 3877
+    },
+    {
+      "id": "workload-50",
+      "sceneDigest": "ffbb3edc6a8d0ac668fa0b27357533a14de58fd2efb97639e5564d4eb81947a1",
+      "endpointFailures": 0,
+      "forwardEdgesUpward": 0,
+      "properUnrelatedCrossings": 0,
+      "entryTopmost": true,
+      "glyphOutlineCount": 891
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+   Compiling flowsketch v0.1.0 (src-tauri)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.53s
+     Running unittests src\lib.rs (src-tauri\target\debug\deps\flowsketch_lib-e7cf8ab3be28b534.exe)
+
+running 12 tests
+test files::tests::malformed_utf8_and_oversized_png_are_explicit_errors ... ok
+test native::path_tests::tauri_verbatim_paths_are_compatible_with_clang_include_paths ... ok
+test files::tests::corrupt_project_and_unsafe_colors_do_not_replace_source ... ok
+test protocol::tests::broken_edge_and_partial_graph_cannot_publish ... ok
+test protocol::tests::input_limits_are_explicit_and_not_truncation ... ok
+test protocol::tests::stale_protocol_response_is_rejected ... ok
+test files::tests::atomic_replace_preserves_previous_project_as_backup ... ok
+test process::tests::excessive_output_is_rejected_before_unbounded_read ... ok
+test process::tests::cancel_during_job_is_bounded ... ok
+test process::tests::normal_native_io_survives_environment_clear ... ok
+test process::tests::memory_limit_is_enforced_by_windows_job ... ok
+test process::tests::timeout_covers_blocked_stdin_and_terminates_child ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.59s

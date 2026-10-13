@@ -1,0 +1,2103 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-10-12T18:53:31.656Z",
+  "toolchain": {
+    "repository": "https://github.com/mstorsjo/llvm-mingw",
+    "releaseTag": "20261006",
+    "releaseUrl": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20261006",
+    "assetUrl": "https://github.com/mstorsjo/llvm-mingw/releases/download/20261006/llvm-mingw-20261006-ucrt-x86_64.zip",
+    "assetName": "llvm-mingw-20261006-ucrt-x86_64.zip",
+    "assetSizeBytes": 190836485,
+    "assetSha256": "317492c456aa27ee607a5919f1d2d38dcdc1112516a24d0bf4b00d078f52d17a",
+    "publishedDigestVerified": true,
+    "toolchainRoot": "tools\\llvm-mingw-20261006-ucrt-x86_64",
+    "executable": "tools\\llvm-mingw-20261006-ucrt-x86_64\\bin\\clang++.exe",
+    "executableSha256": "ee85bef2c733e24a26c22be3df94bd631cf9528a048fce91241c182a936737fe",
+    "installationScope": "project-local portable; no PATH or registry modifications"
+  },
+  "version": "clang version 23.1.3 (https://github.com/llvm/llvm-project.git 0d261d1ca552c95a8f007e061c787ac7132fbcbc)\nTarget: x86_64-w64-windows-gnu\nThread model: posix\nInstalledDir: tools/llvm-mingw-20261006-ucrt-x86_64/bin\nConfiguration file: tools/llvm-mingw-20261006-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg",
+  "sourceExecution": false,
+  "linkedUserPrograms": false,
+  "sourceRangeUnits": {
+    "offset": "utf8-bytes",
+    "column": "utf8-bytes",
+    "line": "1-based",
+    "end": "exclusive"
+  },
+  "layoutFeedbackPolicy": {
+    "field": "edge.layoutHint",
+    "value": "back",
+    "predicate": "edge.role === 'back' || edge.layoutHint === 'back'",
+    "semanticRolesAndTargetsPreserved": true
+  },
+  "environmentPolicy": "Only SystemRoot, windir, TEMP, TMP, project-toolchain bin and System32 PATH in child process. INCLUDE, LIB, SDK and CPATH variables not inherited.",
+  "discovery": {
+    "pathClangFound": false,
+    "knownLlvmAndVsLocationsFound": false,
+    "scope": "PATH and default LLVM/VS2017-2022 locations only; not exhaustive disk search"
+  },
+  "cases": [
+    {
+      "id": "sumOdd",
+      "feature": "for + continue",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 49,
+      "astBytes": 24235,
+      "cfgBytes": 1017,
+      "nodes": 10,
+      "edges": 11,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "continue",
+          "to": "++i",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "++i",
+          "to": "i <= n",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "s += i",
+          "to": "++i",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n10",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2"
+          ]
+        },
+        {
+          "kind": "continue-layout-hint",
+          "expectedHint": null,
+          "passed": true
+        },
+        {
+          "kind": "continue-retained-in-forward-ranking",
+          "passed": true
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "continue successor contains the for increment ++",
+          "blocks": 9
+        }
+      ],
+      "artifacts": "results/sumOdd",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\sumOdd\\sumOdd.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "forContinue",
+      "feature": "continue -> increment",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 51,
+      "astBytes": 21994,
+      "cfgBytes": 989,
+      "nodes": 10,
+      "edges": 11,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "continue",
+          "to": "++i",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "++i",
+          "to": "i<n",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n10",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2"
+          ]
+        },
+        {
+          "kind": "continue-layout-hint",
+          "expectedHint": null,
+          "passed": true
+        },
+        {
+          "kind": "continue-retained-in-forward-ranking",
+          "passed": true
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "continue successor contains the for increment ++",
+          "blocks": 9
+        }
+      ],
+      "artifacts": "results/forContinue",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\forContinue\\forContinue.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "whileContinue",
+      "feature": "while continue -> condition",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 54,
+      "astBytes": 18984,
+      "cfgBytes": 900,
+      "nodes": 9,
+      "edges": 10,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "continue",
+          "to": "x<n",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "kind": "continue-layout-hint",
+          "expectedHint": "back",
+          "passed": true
+        },
+        {
+          "kind": "missing-while-continue-hint-recreates-cycle",
+          "passed": true
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "continue successor is while condition",
+          "blocks": 9
+        }
+      ],
+      "artifacts": "results/whileContinue",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\whileContinue\\whileContinue.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "doContinue",
+      "feature": "do while continue -> bottom test",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 18968,
+      "cfgBytes": 903,
+      "nodes": 9,
+      "edges": 10,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "continue",
+          "to": "x<n",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "x<n",
+          "to": "++x",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e7"
+          ]
+        },
+        {
+          "kind": "continue-layout-hint",
+          "expectedHint": null,
+          "passed": true
+        },
+        {
+          "kind": "continue-retained-in-forward-ranking",
+          "passed": true
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "continue successor is do-while bottom condition",
+          "blocks": 9
+        }
+      ],
+      "artifacts": "results/doContinue",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\doContinue\\doContinue.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "nestedBreak",
+      "feature": "nearest nested break",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 51,
+      "astBytes": 31850,
+      "cfgBytes": 1276,
+      "nodes": 14,
+      "edges": 16,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "break",
+          "to": "s+=10",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n10",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n11",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n12",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n13",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n14",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2",
+            "e4"
+          ]
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "inner break successor contains outer-tail +=10",
+          "blocks": 13
+        }
+      ],
+      "artifacts": "results/nestedBreak",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\nestedBreak\\nestedBreak.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "switchFallthrough",
+      "feature": "switch fallthrough",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 49,
+      "astBytes": 22842,
+      "cfgBytes": 729,
+      "nodes": 9,
+      "edges": 10,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "y+=1",
+          "to": "y+=2",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "break",
+          "to": "return y",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "case1 has direct successor case2",
+          "blocks": 7
+        }
+      ],
+      "artifacts": "results/switchFallthrough",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\switchFallthrough\\switchFallthrough.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "switchNoDefault",
+      "feature": "no-match branch",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 12658,
+      "cfgBytes": 500,
+      "nodes": 7,
+      "edges": 7,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "x",
+          "to": "return y",
+          "role": "default",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "switch has no-match successor containing return",
+          "blocks": 5
+        }
+      ],
+      "artifacts": "results/switchNoDefault",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\switchNoDefault\\switchNoDefault.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "switchContinue",
+      "feature": "switch does not capture continue",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 49,
+      "astBytes": 28162,
+      "cfgBytes": 1074,
+      "nodes": 11,
+      "edges": 12,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "continue",
+          "to": "++i",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n9",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n10",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n11",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2"
+          ]
+        },
+        {
+          "kind": "continue-layout-hint",
+          "expectedHint": null,
+          "passed": true
+        },
+        {
+          "kind": "continue-retained-in-forward-ranking",
+          "passed": true
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "continue successor contains the for increment ++",
+          "blocks": 10
+        }
+      ],
+      "artifacts": "results/switchContinue",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\switchContinue\\switchContinue.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "shortCircuitAnd",
+      "feature": "&& RHS guarded",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 53,
+      "astBytes": 13302,
+      "cfgBytes": 657,
+      "nodes": 7,
+      "edges": 8,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "a",
+          "to": "++b>0",
+          "role": "true",
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "a",
+          "to": "return 0",
+          "role": "false",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "RHS ++b is only on the true successor of &&",
+          "blocks": 6
+        }
+      ],
+      "artifacts": "results/shortCircuitAnd",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\shortCircuitAnd\\shortCircuitAnd.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "shortCircuitOr",
+      "feature": "|| RHS guarded",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 54,
+      "astBytes": 13298,
+      "cfgBytes": 656,
+      "nodes": 7,
+      "edges": 8,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "a",
+          "to": "++b>0",
+          "role": "false",
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "a",
+          "to": "return b",
+          "role": "true",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "RHS ++b is only on the false successor of ||",
+          "blocks": 6
+        }
+      ],
+      "artifacts": "results/shortCircuitOr",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\shortCircuitOr\\shortCircuitOr.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "earlyReturn",
+      "feature": "return ends normal flow",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 10493,
+      "cfgBytes": 549,
+      "nodes": 6,
+      "edges": 6,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "return -1",
+          "to": "Конец",
+          "role": "return",
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "return x",
+          "to": "Конец",
+          "role": "return",
+          "passed": true
+        },
+        {
+          "kind": "forbidden-edge",
+          "from": "return x",
+          "to": "x+=1",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "each return block goes directly to EXIT, never dead tail",
+          "blocks": 6
+        }
+      ],
+      "artifacts": "results/earlyReturn",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\earlyReturn\\earlyReturn.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "implicitMain",
+      "feature": "implicit main return 0",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 3932,
+      "cfgBytes": 178,
+      "nodes": 4,
+      "edges": 3,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "++x",
+          "to": "Конец · return 0",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "main ordinary body reaches CFG EXIT; return0 is independently synthesized from language rule",
+          "blocks": 3
+        }
+      ],
+      "artifacts": "results/implicitMain",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\implicitMain\\implicitMain.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "ifElse",
+      "feature": "if else merge",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 11204,
+      "cfgBytes": 555,
+      "nodes": 6,
+      "edges": 6,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "x>0",
+          "to": "x+=1",
+          "role": "true",
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "x>0",
+          "to": "x-=1",
+          "role": "false",
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "x+=1",
+          "to": "return x",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "x-=1",
+          "to": "return x",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": []
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "if has two successors containing += and -=",
+          "blocks": 6
+        }
+      ],
+      "artifacts": "results/ifElse",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\ifElse\\ifElse.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "stdlib",
+      "feature": "iostream vector string algorithm cmath syntax smoke",
+      "status": "PARSED_ONLY",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 422,
+      "astBytes": 80790,
+      "cfgBytes": 0,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "syntax-only-stdlib",
+          "passed": true
+        },
+        {
+          "kind": "bundled-only-include-search",
+          "passed": true,
+          "directories": [
+            "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+            "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+            "tools\\llvm-mingw-20261006-ucrt-x86_64\\include"
+          ]
+        }
+      ],
+      "artifacts": "results/stdlib",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "-v",
+        "spikes\\clang\\results\\stdlib\\stdlib.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "utf8Offsets",
+      "feature": "UTF-8 byte offsets after Russian comment",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 49,
+      "astBytes": 17372,
+      "cfgBytes": 763,
+      "nodes": 8,
+      "edges": 8,
+      "checks": [
+        {
+          "kind": "required-edge",
+          "from": "s+=i",
+          "to": "++i",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "++i",
+          "to": "i<n",
+          "role": null,
+          "passed": true
+        },
+        {
+          "kind": "required-edge",
+          "from": "return s",
+          "to": "Конец",
+          "role": "return",
+          "passed": true
+        },
+        {
+          "kind": "byte-offset-line",
+          "label": "i<n",
+          "expectedLine": 4,
+          "passed": true
+        },
+        {
+          "kind": "byte-offset-line",
+          "label": "return s",
+          "expectedLine": 6,
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n5",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n6",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n7",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n8",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e2"
+          ]
+        },
+        {
+          "kind": "independent-cfg-rule",
+          "passed": true,
+          "expected": "loop increment goes back to for condition",
+          "blocks": 7
+        }
+      ],
+      "artifacts": "results/utf8Offsets",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\utf8Offsets\\utf8Offsets.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "macroDenied",
+      "feature": "Macro spelling/expansion rejected by adapter",
+      "status": "UNSUPPORTED",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 47,
+      "astBytes": 15262,
+      "cfgBytes": 460,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "unsupported-rejection",
+          "passed": true,
+          "diagnostic": {
+            "message": "Macro source mapping is not implemented in this spike",
+            "astKind": "BinaryOperator"
+          }
+        }
+      ],
+      "artifacts": "results/macroDenied",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\macroDenied\\macroDenied.cpp"
+      ],
+      "adapterError": {
+        "message": "Macro source mapping is not implemented in this spike",
+        "astKind": "BinaryOperator"
+      }
+    },
+    {
+      "id": "syntaxError",
+      "feature": "Parse errors cannot become graph",
+      "status": "INPUT_ERROR",
+      "passed": true,
+      "syntaxExitCode": 1,
+      "syntaxMs": 47,
+      "astBytes": 0,
+      "cfgBytes": 0,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "parse-rejection",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/syntaxError",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\syntaxError\\syntaxError.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "volatileDenied",
+      "feature": "volatile cannot enter scalar allowlist",
+      "status": "UNSUPPORTED",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 4564,
+      "cfgBytes": 257,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "unsupported-rejection",
+          "passed": true,
+          "diagnostic": {
+            "message": "Only ordinary local scalar/array declarations are implemented in this spike",
+            "astKind": "VarDecl"
+          }
+        }
+      ],
+      "artifacts": "results/volatileDenied",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\volatileDenied\\volatileDenied.cpp"
+      ],
+      "adapterError": {
+        "message": "Only ordinary local scalar/array declarations are implemented in this spike",
+        "astKind": "VarDecl"
+      }
+    },
+    {
+      "id": "missingReturn",
+      "feature": "Werror return-type blocks non-void fallthrough",
+      "status": "INPUT_ERROR",
+      "passed": true,
+      "syntaxExitCode": 1,
+      "syntaxMs": 51,
+      "astBytes": 0,
+      "cfgBytes": 0,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "parse-rejection",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/missingReturn",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\missingReturn\\missingReturn.cpp"
+      ],
+      "adapterError": null
+    },
+    {
+      "id": "opaqueDenied",
+      "feature": "Calls need full called-declaration metadata",
+      "status": "UNSUPPORTED",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "syntaxMs": 48,
+      "astBytes": 3574,
+      "cfgBytes": 259,
+      "nodes": 0,
+      "edges": 0,
+      "checks": [
+        {
+          "kind": "unsupported-rejection",
+          "passed": true,
+          "diagnostic": {
+            "message": "Opaque calls require called-declaration metadata, which filtered CLI AST does not fully provide in this spike",
+            "astKind": "CallExpr"
+          }
+        }
+      ],
+      "artifacts": "results/opaqueDenied",
+      "arguments": [
+        "--no-default-config",
+        "--target=x86_64-w64-windows-gnu",
+        "--sysroot=tools\\llvm-mingw-20261006-ucrt-x86_64",
+        "-resource-dir=tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23",
+        "-nostdinc",
+        "-nostdinc++",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+        "-isystem",
+        "tools\\llvm-mingw-20261006-ucrt-x86_64\\include",
+        "-std=c++17",
+        "-pedantic-errors",
+        "-Werror=return-type",
+        "-fno-color-diagnostics",
+        "-fdiagnostics-absolute-paths",
+        "-fsyntax-only",
+        "spikes\\clang\\results\\opaqueDenied\\opaqueDenied.cpp"
+      ],
+      "adapterError": {
+        "message": "Opaque calls require called-declaration metadata, which filtered CLI AST does not fully provide in this spike",
+        "astKind": "CallExpr"
+      }
+    }
+  ],
+  "feedbackCases": [
+    {
+      "id": "emptyWhile",
+      "feature": "empty while true self-edge retains logical branch",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 3,
+      "edges": 3,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "keep",
+          "to": "keep",
+          "role": "true",
+          "hint": "back",
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyWhile"
+    },
+    {
+      "id": "emptyWhileAnd",
+      "feature": "short-circuit empty while feedback from RHS to LHS",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 4,
+      "edges": 5,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e3"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "a",
+          "to": "b",
+          "role": "true",
+          "hint": null,
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "b",
+          "to": "a",
+          "role": "true",
+          "hint": "back",
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyWhileAnd"
+    },
+    {
+      "id": "emptyForNoIncrement",
+      "feature": "empty for without increment feedback true edge",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 3,
+      "edges": 3,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "keep",
+          "to": "keep",
+          "role": "true",
+          "hint": "back",
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyForNoIncrement"
+    },
+    {
+      "id": "forContinueNoIncrement",
+      "feature": "for continue without increment targets header as feedback",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 4,
+      "edges": 4,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "continue",
+          "to": "keep",
+          "role": "continue",
+          "hint": "back",
+          "label": "",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/forContinueNoIncrement"
+    },
+    {
+      "id": "emptyDo",
+      "feature": "do empty body loop true self edge",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 3,
+      "edges": 3,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "keep",
+          "to": "keep",
+          "role": "back",
+          "hint": "back",
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "logical-branch-preserved",
+          "from": "keep",
+          "to": "keep",
+          "branch": "true",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyDo"
+    },
+    {
+      "id": "emptyIfWhile",
+      "feature": "empty if-body inside while retains guarded feedback",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 4,
+      "edges": 5,
+      "checks": [
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n3",
+          "passed": true
+        },
+        {
+          "kind": "exact-source-slice",
+          "nodeId": "n4",
+          "passed": true
+        },
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1",
+            "e2"
+          ]
+        },
+        {
+          "kind": "feedback-edge-preserves-semantics",
+          "from": "flag",
+          "to": "keep",
+          "role": "true",
+          "hint": "back",
+          "label": "Да",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyIfWhile"
+    },
+    {
+      "id": "emptyForever",
+      "feature": "empty infinite for has feedback, no invented false branch",
+      "status": "BUILT_NORMAL_FLOW",
+      "passed": true,
+      "syntaxExitCode": 0,
+      "nodes": 3,
+      "edges": 2,
+      "checks": [
+        {
+          "kind": "stable-role-back",
+          "passed": true
+        },
+        {
+          "kind": "forward-ranking-dag",
+          "passed": true,
+          "feedbackEdgeIds": [
+            "e1"
+          ]
+        },
+        {
+          "kind": "empty-infinite-loop-no-false-branch",
+          "passed": true
+        },
+        {
+          "kind": "cfg-entry-captured",
+          "passed": true
+        }
+      ],
+      "artifacts": "results/emptyForever"
+    }
+  ],
+  "limitations": [
+    "Not a clean Windows VM; PKG-02 is NOT passed.",
+    "CLI filtered AST JSON and debug.DumpCFG are version-specific spike formats, not final bounded native sidecar protocol.",
+    "AST-name filter collisions/overloads require selected-function native LibTooling filtering.",
+    "STL headers smoke proves parse availability, not admitted STL graph semantics.",
+    "Only the experimental scalar/control subset is graph-adapted; opaque calls rejected without complete called-declaration metadata.",
+    "No full matrix T01-T50 acceptance; no source execution, runtime correctness, UB, termination or complete exception/lifetime analysis.",
+    "Adapter source offsets are UTF-8 bytes; Windows Job Object, VFS allowlist, hard memory budget and production cancellation are not implemented here."
+  ],
+  "includeSearch": {
+    "directories": [
+      "tools\\llvm-mingw-20261006-ucrt-x86_64\\include\\c++\\v1",
+      "tools\\llvm-mingw-20261006-ucrt-x86_64\\lib\\clang\\23\\include",
+      "tools\\llvm-mingw-20261006-ucrt-x86_64\\include"
+    ],
+    "bundledOnly": true,
+    "sysroot": "tools\\llvm-mingw-20261006-ucrt-x86_64",
+    "verboseFile": "results/stdlib/syntax.stderr.txt"
+  },
+  "summary": {
+    "fixtures": 20,
+    "passed": 20,
+    "failed": 0,
+    "primaryFailed": 0,
+    "graphFixtures": 14,
+    "feedbackFixtures": 7,
+    "feedbackPassed": 7,
+    "feedbackFailed": 0,
+    "stdlibSyntaxSmoke": true,
+    "cleanVmPackagingAcceptance": false,
+    "full50CaseAcceptance": false
+  }
+}

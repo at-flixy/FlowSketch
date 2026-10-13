@@ -1,0 +1,253 @@
+{
+  "id": "earlyReturn",
+  "title": "earlyReturn",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 22,
+          "line": 1,
+          "column": 23
+        },
+        "end": {
+          "offset": 55,
+          "line": 1,
+          "column": 56
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 22,
+          "line": 1,
+          "column": 23
+        },
+        "end": {
+          "offset": 55,
+          "line": 1,
+          "column": 56
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "process",
+      "label": "x+=1",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 49,
+          "line": 1,
+          "column": 50
+        },
+        "end": {
+          "offset": 53,
+          "line": 1,
+          "column": 54
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "CompoundAssignOperator"
+      },
+      "originalText": "x+=1",
+      "astKind": "CompoundAssignOperator",
+      "reachable": false
+    },
+    {
+      "id": "n4",
+      "kind": "process",
+      "label": "return x",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 40,
+          "line": 1,
+          "column": 41
+        },
+        "end": {
+          "offset": 48,
+          "line": 1,
+          "column": 49
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return x",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    },
+    {
+      "id": "n5",
+      "kind": "decision",
+      "label": "x<0",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "offset": 29,
+          "line": 1,
+          "column": 30
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "x<0",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n6",
+      "kind": "process",
+      "label": "return -1",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 30,
+          "line": 1,
+          "column": 31
+        },
+        "end": {
+          "offset": 39,
+          "line": 1,
+          "column": 40
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return -1",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n1",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e3",
+      "source": "n6",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e4",
+      "source": "n5",
+      "target": "n6",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e5",
+      "source": "n5",
+      "target": "n4",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e6",
+      "source": "n2",
+      "target": "n5",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [
+    {
+      "code": "UNREACHABLE_COMPONENT",
+      "nodeId": "n3",
+      "sourceRange": {
+        "file": "earlyReturn.cpp",
+        "begin": {
+          "offset": 49,
+          "line": 1,
+          "column": 50
+        },
+        "end": {
+          "offset": 53,
+          "line": 1,
+          "column": 54
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "CompoundAssignOperator"
+      }
+    }
+  ],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

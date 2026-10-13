@@ -1,0 +1,261 @@
+{
+  "id": "switchNoDefault",
+  "title": "switchNoDefault",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "offset": 73,
+          "line": 1,
+          "column": 74
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "offset": 73,
+          "line": 1,
+          "column": 74
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "process",
+      "label": "return y",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 63,
+          "line": 1,
+          "column": 64
+        },
+        "end": {
+          "offset": 71,
+          "line": 1,
+          "column": 72
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return y",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    },
+    {
+      "id": "n4",
+      "kind": "process",
+      "label": "break",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 56,
+          "line": 1,
+          "column": 57
+        },
+        "end": {
+          "offset": 61,
+          "line": 1,
+          "column": 62
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BreakStmt"
+      },
+      "originalText": "break",
+      "astKind": "BreakStmt",
+      "reachable": true
+    },
+    {
+      "id": "n5",
+      "kind": "process",
+      "label": "y=7",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 52,
+          "line": 1,
+          "column": 53
+        },
+        "end": {
+          "offset": 55,
+          "line": 1,
+          "column": 56
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "y=7",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n6",
+      "kind": "decision",
+      "label": "x",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 42,
+          "line": 1,
+          "column": 43
+        },
+        "end": {
+          "offset": 43,
+          "line": 1,
+          "column": 44
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ImplicitCastExpr"
+      },
+      "originalText": "x",
+      "astKind": "ImplicitCastExpr",
+      "reachable": true
+    },
+    {
+      "id": "n7",
+      "kind": "process",
+      "label": "int y=0",
+      "sourceRange": {
+        "file": "switchNoDefault.cpp",
+        "begin": {
+          "offset": 27,
+          "line": 1,
+          "column": 28
+        },
+        "end": {
+          "offset": 35,
+          "line": 1,
+          "column": 36
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int y=0;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "target": "n3",
+      "label": "",
+      "role": "break"
+    },
+    {
+      "id": "e3",
+      "source": "n5",
+      "target": "n4",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e4",
+      "source": "n6",
+      "target": "n5",
+      "label": "case 1",
+      "role": "case"
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "target": "n3",
+      "label": "Нет совпадения",
+      "role": "default"
+    },
+    {
+      "id": "e6",
+      "source": "n7",
+      "target": "n6",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e7",
+      "source": "n2",
+      "target": "n7",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

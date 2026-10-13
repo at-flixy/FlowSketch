@@ -1,0 +1,151 @@
+{
+  "runtime": "real Tauri Windows WebView2",
+  "generatedAt": "2026-10-13T08:12:14.437Z",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "msedge",
+    "browserVersion": "154.0.0.0",
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "setWindowRect": true,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    }
+  },
+  "analyzerExecutedByHarness": false,
+  "graph": "existing real Stage 1 Clang sumOdd JSON",
+  "results": [
+    {
+      "name": "development",
+      "url": "http://127.0.0.1:1420",
+      "passed": true,
+      "snapshot": {
+        "diagnostics": [],
+        "edges": 11,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+          "unitsPerEm": 2048
+        },
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "height": 1006,
+        "modelRevision": 77,
+        "nodes": 10,
+        "primitives": 101,
+        "requestId": "browser-development",
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "status": "ready",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "styleRevision": 9,
+        "timings": {
+          "measurementMs": 11.2,
+          "totalMs": 348.7
+        },
+        "width": 574
+      },
+      "svg": {
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+          "unitsPerEm": 2048
+        },
+        "foreignObjects": 0,
+        "paths": 101,
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "unicode": true
+      },
+      "pngs": [
+        {
+          "file": "development-1x.png",
+          "scale": 1,
+          "width": 574,
+          "height": 1006,
+          "bytes": 38427,
+          "sha256": "6bad0ce0bebc81cc2af234cfadbbf78cfc8b58b9efcb97d699a53de73366d87e"
+        },
+        {
+          "file": "development-2x.png",
+          "scale": 2,
+          "width": 1148,
+          "height": 2012,
+          "bytes": 107201,
+          "sha256": "1056f841ea81aa76ebfba82541d1f20282a4854cb851648d488b27363700a70d"
+        }
+      ],
+      "cancellation": {
+        "old": "AbortError",
+        "newestRequestId": "new"
+      },
+      "errors": []
+    },
+    {
+      "name": "production",
+      "url": "http://127.0.0.1:4240",
+      "passed": true,
+      "snapshot": {
+        "diagnostics": [],
+        "edges": 11,
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+          "unitsPerEm": 2048
+        },
+        "graphDigest": "d916d234fab28f16f2adb42bf8e722034225b223807ee39630ce813c04914f0f",
+        "height": 1006,
+        "modelRevision": 77,
+        "nodes": 10,
+        "primitives": 101,
+        "requestId": "browser-production",
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "status": "ready",
+        "styleDigest": "1cba2b9350995309ca1f8e756561bb0a391d1ab7b8a00032754d849b32cd5f61",
+        "styleRevision": 9,
+        "timings": {
+          "measurementMs": 10.4,
+          "totalMs": 360.9
+        },
+        "width": 574
+      },
+      "svg": {
+        "font": {
+          "family": "Liberation Sans",
+          "postscriptName": "LiberationSans",
+          "sha256": "f8ace1f892b2bd9dc1792ba7f097fa7588f84fed48321480e04de5390828221f",
+          "unitsPerEm": 2048
+        },
+        "foreignObjects": 0,
+        "paths": 101,
+        "sceneDigest": "9d36cfb653a21335a8e4e0b5f52639cef43914015ec669c045032f4509a507a6",
+        "unicode": true
+      },
+      "pngs": [
+        {
+          "file": "production-1x.png",
+          "scale": 1,
+          "width": 574,
+          "height": 1006,
+          "bytes": 38427,
+          "sha256": "6bad0ce0bebc81cc2af234cfadbbf78cfc8b58b9efcb97d699a53de73366d87e"
+        },
+        {
+          "file": "production-2x.png",
+          "scale": 2,
+          "width": 1148,
+          "height": 2012,
+          "bytes": 107201,
+          "sha256": "1056f841ea81aa76ebfba82541d1f20282a4854cb851648d488b27363700a70d"
+        }
+      ],
+      "cancellation": {
+        "old": "AbortError",
+        "newestRequestId": "new"
+      },
+      "errors": []
+    }
+  ]
+}

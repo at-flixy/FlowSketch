@@ -1,0 +1,4 @@
+{
+  "app": {"withGlobalTauri":true},
+  "bundle": {"active":false}
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Bishkek",
+  "browser": "Codex In-app Browser",
+  "url": "http://127.0.0.1:1420/",
+  "nativeBackendMocked": false,
+  "nativeBackendVerified": false,
+  "cppExecuted": false,
+  "viewports": [
+    { "width": 1440, "height": 900, "modes": ["code", "formatting", "gallery"], "visuallyInspected": true },
+    { "width": 1100, "height": 768, "sourceWidth": 390, "canvasWidth": 616, "documentWidth": 1100, "visuallyInspected": true },
+    { "width": 640, "height": 480, "modes": ["code", "formatting", "gallery"], "documentWidth": 640, "buildButtonInsideViewport": true, "visuallyInspected": true }
+  ],
+  "checks": {
+    "nativeUnavailableExplicit": true,
+    "noFakeGraph": true,
+    "exportDisabledUntilCurrentScene": true,
+    "galleryTabTrap": true,
+    "galleryShiftTabTrap": true,
+    "galleryEscapeReturnFocus": true,
+    "styleUndoRedoActualSelect": [14, 18, 14, 18],
+    "unsavedReplacementCancelKeepsProject": true,
+    "contrastMinimumStaticRoles": 4.71,
+    "reducedMotionCssPresent": true,
+    "reducedMotionOsEmulated": false,
+    "productionBuild": "pass"
+  },
+  "screenshotsManifest": "screenshots.json",
+  "limits": ["Native ACC-05 requires real Tauri integration test", "No Windows DPI or clean machine acceptance", "PDF absent", "Individual block styling and .flowstyle import absent", "Main bundle launch budget not measured"]
+}

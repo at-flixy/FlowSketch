@@ -1,0 +1,309 @@
+{
+  "generatedAt": "2026-10-13T08:58:57.787Z",
+  "runtime": "Tauri + Windows WebView2",
+  "mockAnalyzer": false,
+  "mockGraph": false,
+  "submittedCodeExecuted": false,
+  "dialogPathSelection": "test-only fixture directory; real native file handlers",
+  "interactiveNativeDialogAutomated": false,
+  "full50CaseAcceptance": false,
+  "cleanWindowsAcceptance": false,
+  "steps": [
+    {
+      "name": "real-desktop-origin",
+      "passed": true,
+      "detail": {
+        "dpr": 1.25,
+        "height": 900,
+        "width": 1440,
+        "url": "http://tauri.localhost/"
+      }
+    },
+    {
+      "name": "cpp-real-file-open",
+      "passed": true,
+      "detail": {
+        "sourceSha256": "8de9369ec39555bb6cfdd544089d6be4e92d757ef59ca526f7c5e4a6300684bd"
+      }
+    },
+    {
+      "name": "native-function-discovery",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Автоматически",
+          "value": ""
+        },
+        {
+          "label": "int sumOdd(int)",
+          "value": "sumOdd(int)"
+        },
+        {
+          "label": "int twice(int)",
+          "value": "twice(int)"
+        }
+      ]
+    },
+    {
+      "name": "cpp-to-canvas",
+      "passed": true,
+      "detail": {
+        "body": "Перейти к рабочей области\nFlowSketch\ninput\nЕсть изменения\nКод → схема\nОформление\nСохранить\nЭкспорт SVG\nВставить код\nОткрыть .cpp\ninput.cpp\nC++17\nФункция\nАвтоматически\nint sumOdd(int)\nint twice(int)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n// Кириллица: сумма нечётных\nint sumOdd(int n) {\n    int s = 0;\n    for (int i = 1; i <= n; ++i) {\n        if (i % 2 == 0) continue;\n        s += i;\n    }\n    return s;\n}\nint twice(int n) { return n * 2; }\nПостроить схему\nCtrl+Enter\nСхема построена для выбранной функции.\nБлок-схема\n10 блоков\n−\n62%\n+\nСхема актуальна\nОбычные переходы внутри функции\ninput.cpp\n\nОткрыт input.cpp. Выберите функцию или постройте схему.",
+        "desktop": true,
+        "diagnostics": [],
+        "digest": "2d0bd1e5759923e40b34edd77d61328be3950b7b21b2477feb1fff434c10de4a",
+        "exportEnabled": true,
+        "nodes": [
+          {
+            "id": "n2",
+            "label": "Блок: Начало",
+            "selected": "false"
+          },
+          {
+            "id": "n10",
+            "label": "Блок: int s = 0",
+            "selected": "false"
+          },
+          {
+            "id": "n9",
+            "label": "Блок: int i = 1",
+            "selected": "false"
+          },
+          {
+            "id": "n4",
+            "label": "Условие: i <= n",
+            "selected": "false"
+          },
+          {
+            "id": "n3",
+            "label": "Блок: return s",
+            "selected": "false"
+          },
+          {
+            "id": "n1",
+            "label": "Блок: Конец",
+            "selected": "false"
+          },
+          {
+            "id": "n7",
+            "label": "Условие: i % 2 == 0",
+            "selected": "false"
+          },
+          {
+            "id": "n6",
+            "label": "Блок: s += i",
+            "selected": "false"
+          },
+          {
+            "id": "n8",
+            "label": "Блок: continue",
+            "selected": "false"
+          },
+          {
+            "id": "n5",
+            "label": "Блок: ++i",
+            "selected": "false"
+          }
+        ],
+        "overflow": false,
+        "scene": "ready",
+        "title": "input",
+        "url": "http://tauri.localhost/",
+        "viewport": {
+          "dpr": 1.25,
+          "height": 900,
+          "width": 1440
+        }
+      }
+    },
+    {
+      "name": "function-switch-cache-uses-own-scene",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "real-job-native-protocol-semantic-oracle",
+      "passed": true,
+      "detail": {
+        "status": "BUILT_NORMAL_FLOW",
+        "analyzerVersion": "flowsketch-native-0.1.0/clang-23.1.3",
+        "nodes": 10,
+        "edges": 11
+      }
+    },
+    {
+      "name": "real-job-bundled-headers-without-compiler",
+      "passed": true,
+      "detail": {
+        "status": "BUILT_WITH_ABSTRACTION",
+        "clangToolchainArgument": "src-tauri/target/debug/toolchain"
+      }
+    },
+    {
+      "name": "block-to-code-real-monaco",
+      "passed": true,
+      "detail": {
+        "highlight": 1,
+        "selected": "n6"
+      }
+    },
+    {
+      "name": "actual-SVG-export",
+      "passed": true,
+      "detail": {
+        "bytes": 41369,
+        "graphDigest": "750fc3005c3f6cbf903a08ed9ee3bfef1f409a76b411ec165c0b424361a01fef",
+        "sceneDigest": "2d0bd1e5759923e40b34edd77d61328be3950b7b21b2477feb1fff434c10de4a"
+      }
+    },
+    {
+      "name": "style-preserves-graph-remeasures-scene",
+      "passed": true,
+      "detail": {
+        "graphDigest": "750fc3005c3f6cbf903a08ed9ee3bfef1f409a76b411ec165c0b424361a01fef",
+        "styleDigest": "1dd2d274fc9950a5275994da9f2b2099a62f6899df1546c58861452a042a8d24"
+      }
+    },
+    {
+      "name": "project-real-save-readback",
+      "passed": true,
+      "detail": {
+        "schemaVersion": 1,
+        "style": {
+          "background": "#FFFFFF",
+          "decisionFill": "#FFFFFF",
+          "fontFamily": "Liberation Sans",
+          "fontSize": 18,
+          "lineColor": "#111111",
+          "nodeFill": "#FFFFFF",
+          "strokeWidth": 1.5,
+          "templateId": "monochrome",
+          "terminalFill": "#FFFFFF",
+          "textColor": "#000000"
+        },
+        "sourceMatches": true
+      }
+    },
+    {
+      "name": "project-backup-real-file",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "reopen-restores-code-style-requires-rebuild",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "real-editor-edit-disables-stale-export",
+      "passed": true,
+      "detail": {
+        "body": "Перейти к рабочей области\nFlowSketch\ninput\nЕсть изменения\nКод → схема\nОформление\nСохранить\nЭкспорт SVG\nВставить код\nОткрыть .cpp\ninput.cpp\nC++17\nФункция\nАвтоматически\nint sumOdd(int)\nint twice(int)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n// Кириллица: сумма нечётных\nint sumOdd(int n) {\n    int s = 0;\n    for (int i = 1; i <= n; ++i) {\n        if (i % 2 == 0) continue;\n         ;\n    }\n    return s;\n}\nint twice(int n) { return n * 2; }\nПостроить схему\nCtrl+Enter\nКод изменён. Постройте схему повторно.\nБлок-схема\n10 блоков\n−\n61%\n+\nУстарела\nСхема устарела\nПредыдущая ревизия 3\ninput.cpp\n\nПроект открыт. Код и оформление восстановлены; постройте схему для этого исходника.",
+        "desktop": true,
+        "diagnostics": [],
+        "digest": "28984ba359d6964277ede1fb77de9d06d00465ab0b73074cb74443151e8f7099",
+        "exportEnabled": false,
+        "nodes": [
+          {
+            "id": "n2",
+            "label": "Блок: Начало",
+            "selected": "false"
+          },
+          {
+            "id": "n10",
+            "label": "Блок: int s = 0",
+            "selected": "false"
+          },
+          {
+            "id": "n9",
+            "label": "Блок: int i = 1",
+            "selected": "false"
+          },
+          {
+            "id": "n4",
+            "label": "Условие: i <= n",
+            "selected": "false"
+          },
+          {
+            "id": "n3",
+            "label": "Блок: return s",
+            "selected": "false"
+          },
+          {
+            "id": "n1",
+            "label": "Блок: Конец",
+            "selected": "false"
+          },
+          {
+            "id": "n7",
+            "label": "Условие: i % 2 == 0",
+            "selected": "false"
+          },
+          {
+            "id": "n6",
+            "label": "Блок: s += i",
+            "selected": "true"
+          },
+          {
+            "id": "n8",
+            "label": "Блок: continue",
+            "selected": "false"
+          },
+          {
+            "id": "n5",
+            "label": "Блок: ++i",
+            "selected": "false"
+          }
+        ],
+        "overflow": false,
+        "scene": "ready",
+        "title": "input",
+        "url": "http://tauri.localhost/",
+        "viewport": {
+          "dpr": 1.25,
+          "height": 900,
+          "width": 1440
+        },
+        "editMode": "native EditContext textupdate"
+      }
+    },
+    {
+      "name": "invalid-code-explicit-diagnostic-no-export",
+      "passed": true,
+      "detail": [
+        "PARSE_ERRORexpected expressionСтрока 1",
+        "PARSE_ERRORexpected ';' after top level declaratorСтрока 1"
+      ]
+    },
+    {
+      "name": "corrupt-project-native-rejection",
+      "passed": true,
+      "detail": "Версия проекта не поддерживается. Оригинальный файл не изменен."
+    }
+  ],
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "msedge",
+    "browserVersion": "154.0.0.0",
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "setWindowRect": true,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    }
+  },
+  "nativeRuntime": {
+    "clangToolchainArgument": "src-tauri/target/debug/toolchain",
+    "contextDigest": "e8395a56d3f8cd813a8b7ebfdcb97259e944df318116a036509696df9bfb132c",
+    "executable": "\\\\?\\src-tauri\\target\\debug\\analyzer\\flowsketch-analyzer.exe",
+    "jobMemoryLimitBytes": 1073741824,
+    "sourceExecuted": false,
+    "timeoutSeconds": 15,
+    "toolchain": "\\\\?\\src-tauri\\target\\debug\\toolchain"
+  },
+  "jsErrors": [],
+  "passed": 16,
+  "success": true
+}

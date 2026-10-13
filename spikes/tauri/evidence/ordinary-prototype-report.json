@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-10-13T14:31:22.726Z",
+  "ordinaryBuild": true,
+  "testFixtureChooser": false,
+  "webdriverCompiled": false,
+  "submittedCodeExecuted": false,
+  "cleanWindows": false,
+  "origin": "http://tauri.localhost/",
+  "nodes": 10,
+  "labels": [
+    "Блок: Начало",
+    "Блок: int s = 0",
+    "Блок: int i = 1",
+    "Условие: i <= n",
+    "Блок: return s",
+    "Блок: Конец",
+    "Условие: i % 2 == 0",
+    "Блок: s += i",
+    "Блок: continue",
+    "Блок: ++i"
+  ],
+  "unsavedCloseGuard": true,
+  "jsErrors": [],
+  "executableSha256": "37e0924e4145a0f45837ce94d5b2831a04d4fa805702a65af9f2ea27562adfb4",
+  "success": true
+}

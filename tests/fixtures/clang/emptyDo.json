@@ -1,0 +1,132 @@
+{
+  "id": "emptyDo",
+  "title": "emptyDo",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "emptyDo.cpp",
+        "begin": {
+          "offset": 23,
+          "line": 1,
+          "column": 24
+        },
+        "end": {
+          "offset": 41,
+          "line": 1,
+          "column": 42
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "emptyDo.cpp",
+        "begin": {
+          "offset": 23,
+          "line": 1,
+          "column": 24
+        },
+        "end": {
+          "offset": 41,
+          "line": 1,
+          "column": 42
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "decision",
+      "label": "keep",
+      "sourceRange": {
+        "file": "emptyDo.cpp",
+        "begin": {
+          "offset": 34,
+          "line": 1,
+          "column": 35
+        },
+        "end": {
+          "offset": 38,
+          "line": 1,
+          "column": 39
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclRefExpr"
+      },
+      "originalText": "keep",
+      "astKind": "DeclRefExpr",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n3",
+      "label": "Да",
+      "role": "back",
+      "layoutHint": "back",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "target": "n1",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "target": "n3",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-10-13T07:22:40.869Z",
+  "executable": "native\\analyzer\\build\\bin\\flowsketch-analyzer.exe",
+  "executableSha256": "6eb05851a9d0f0c27313cfe6e0f3ac5af18ed57b310be1848faf61c3ea9c2668",
+  "toolchainRoot": "tools\\llvm-mingw-20261006-ucrt-x86_64",
+  "nativeLibTooling": true,
+  "sourceExecution": false,
+  "full50CaseAcceptance": false,
+  "cleanMachinePackaging": false,
+  "command": "node native/analyzer/tests/run.mjs",
+  "passed": 47,
+  "total": 47,
+  "cases": [
+    {
+      "id": "sumOdd",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 6186,
+      "elapsedMs": 56.48969999999999
+    },
+    {
+      "id": "forContinue",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 6195,
+      "elapsedMs": 44.95100000000001
+    },
+    {
+      "id": "whileContinue",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 5770,
+      "elapsedMs": 46.721600000000024
+    },
+    {
+      "id": "doContinue",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 5732,
+      "elapsedMs": 53.680199999999985
+    },
+    {
+      "id": "nestedBreak",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 8162,
+      "elapsedMs": 55.65929999999997
+    },
+    {
+      "id": "switchFallthrough",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 5686,
+      "elapsedMs": 48.18869999999998
+    },
+    {
+      "id": "switchNoDefault",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 4645,
+      "elapsedMs": 52.799999999999955
+    },
+    {
+      "id": "switchContinue",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 6667,
+      "elapsedMs": 53.753900000000044
+    },
+    {
+      "id": "shortCircuitAnd",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 4808,
+      "elapsedMs": 62.44160000000005
+    },
+    {
+      "id": "shortCircuitOr",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 4803,
+      "elapsedMs": 75.06540000000007
+    },
+    {
+      "id": "earlyReturn",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 4225,
+      "elapsedMs": 96.6703
+    },
+    {
+      "id": "implicitMain",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 3115,
+      "elapsedMs": 83.02239999999995
+    },
+    {
+      "id": "ifElse",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 4208,
+      "elapsedMs": 78.16930000000002
+    },
+    {
+      "id": "stdlib",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "stdoutBytes": 1358,
+      "elapsedMs": 1024.9655000000002
+    },
+    {
+      "id": "utf8Offsets",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "stdoutBytes": 5143,
+      "elapsedMs": 47.06840000000011
+    },
+    {
+      "id": "macroDenied",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "stdoutBytes": 1314,
+      "elapsedMs": 44.55510000000004
+    },
+    {
+      "id": "syntaxError",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "stdoutBytes": 1144,
+      "elapsedMs": 44.450799999999845
+    },
+    {
+      "id": "volatileDenied",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "stdoutBytes": 1353,
+      "elapsedMs": 39.73880000000008
+    },
+    {
+      "id": "missingReturn",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "stdoutBytes": 885,
+      "elapsedMs": 42.86100000000033
+    },
+    {
+      "id": "opaqueDenied",
+      "passed": true,
+      "status": "BUILT_WITH_ABSTRACTION",
+      "stdoutBytes": 3169,
+      "elapsedMs": 47.78070000000025
+    },
+    {
+      "id": "feedback-emptyWhile",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-emptyWhileAnd",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-emptyForNoIncrement",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-forContinueNoIncrement",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-emptyDo",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-emptyIfWhile",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "feedback-emptyForever",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "discover-select-second-function",
+      "passed": true,
+      "functions": [
+        "one()",
+        "two(int)"
+      ]
+    },
+    {
+      "id": "utf8-utf16-same-line",
+      "passed": true,
+      "byteColumn": 39,
+      "utf16Column": 31
+    },
+    {
+      "id": "opaque-condition-call-metadata",
+      "passed": true,
+      "status": "BUILT_WITH_ABSTRACTION"
+    },
+    {
+      "id": "direct-noreturn-terminal",
+      "passed": true,
+      "status": "BUILT_WITH_ABSTRACTION"
+    },
+    {
+      "id": "custom-raii",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_CONSTRUCT"
+      ]
+    },
+    {
+      "id": "overloaded-logical",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_TYPE"
+      ]
+    },
+    {
+      "id": "try-catch",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_CONSTRUCT"
+      ]
+    },
+    {
+      "id": "goto",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_CONSTRUCT"
+      ]
+    },
+    {
+      "id": "global-dynamic",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_CONSTRUCT"
+      ]
+    },
+    {
+      "id": "external-include-denied",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "diagnostics": [
+        "PARSE_ERROR"
+      ]
+    },
+    {
+      "id": "indirect-function-call",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_TYPE"
+      ]
+    },
+    {
+      "id": "noreturn-condition",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "UNSUPPORTED_CONSTRUCT"
+      ]
+    },
+    {
+      "id": "nesting-limit",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "diagnostics": [
+        "GRAPH_LIMIT"
+      ]
+    },
+    {
+      "id": "protocol-version",
+      "passed": true,
+      "status": "FAILURE",
+      "diagnostics": [
+        "PROTOCOL_ERROR"
+      ]
+    },
+    {
+      "id": "digest-mismatch",
+      "passed": true,
+      "status": "FAILURE",
+      "diagnostics": [
+        "DIGEST_MISMATCH"
+      ]
+    },
+    {
+      "id": "source-byte-limit",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "diagnostics": [
+        "SOURCE_LIMIT"
+      ]
+    },
+    {
+      "id": "source-line-limit",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "diagnostics": [
+        "SOURCE_LIMIT"
+      ]
+    },
+    {
+      "id": "trailing-null-retains-while-feedback",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "negated-short-circuit",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    },
+    {
+      "id": "explicit-main-return-is-not-labelled-zero",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW"
+    }
+  ]
+}

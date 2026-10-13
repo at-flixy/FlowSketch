@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-13T07:47:48.834Z",
+  "executable": "native\\analyzer\\build\\bin\\flowsketch-analyzer.exe",
+  "executableSha256": "6eb05851a9d0f0c27313cfe6e0f3ac5af18ed57b310be1848faf61c3ea9c2668",
+  "temporaryRuntime": "spikes\\tauri\\runtime-review\\temporary-runtime",
+  "runtimeHasCompiler": false,
+  "runtimeHasLibraries": false,
+  "clearedExternalIncludeEnvironment": true,
+  "nativeLibTooling": true,
+  "sourceExecution": false,
+  "full50CaseAcceptance": false,
+  "cleanWindowsGate": false,
+  "manifestSha256": "2931064e0ee455a2d417434edafe161aedee7567fb94d49db4df2646ee1acf5c",
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "id": "iostream-header",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "elapsedMs": 698,
+      "outputFile": "iostream-header.json",
+      "diagnostics": []
+    },
+    {
+      "id": "cmath-opaque-sqrt",
+      "passed": true,
+      "status": "BUILT_WITH_ABSTRACTION",
+      "elapsedMs": 74,
+      "outputFile": "cmath-opaque-sqrt.json",
+      "diagnostics": []
+    },
+    {
+      "id": "iostream-cmath-combined",
+      "passed": true,
+      "status": "BUILT_WITH_ABSTRACTION",
+      "elapsedMs": 749,
+      "outputFile": "iostream-cmath-combined.json",
+      "diagnostics": []
+    },
+    {
+      "id": "common-stl-header-lookup",
+      "passed": true,
+      "status": "BUILT_NORMAL_FLOW",
+      "elapsedMs": 933,
+      "outputFile": "common-stl-header-lookup.json",
+      "diagnostics": []
+    },
+    {
+      "id": "iostream-operators-explicitly-unsupported",
+      "passed": true,
+      "status": "UNSUPPORTED",
+      "elapsedMs": 807,
+      "outputFile": "iostream-operators-explicitly-unsupported.json",
+      "diagnostics": [
+        "UNSUPPORTED_TYPE"
+      ]
+    },
+    {
+      "id": "outside-include-denied",
+      "passed": true,
+      "status": "INPUT_ERROR",
+      "elapsedMs": 7,
+      "outputFile": "outside-include-denied.json",
+      "diagnostics": [
+        "PARSE_ERROR"
+      ]
+    }
+  ]
+}

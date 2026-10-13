@@ -1,0 +1,30 @@
+import {readdir,readFile,writeFile} from 'node:fs/promises';
+import {resolve,relative,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const directory=resolve(root,'prototype/windows-x64');
+const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+const paths=[];
+async function walk(folder){for(const e of await readdir(folder,{withFileTypes:true})){if(e.isSymbolicLink())throw new Error('Unexpected link in prototype');const path=resolve(folder,e.name);if(e.isDirectory())await walk(path);else if(e.isFile()&&e.name!=='manifest.json')paths.push(path);}}
+await walk(directory);paths.sort();
+let cursor=0;const files=[];
+await Promise.all(Array.from({length:8},async()=>{while(cursor<paths.length){const path=paths[cursor++];const bytes=await readFile(path);files.push({path:relative(directory,path).replaceAll('\\','/'),bytes:bytes.length,sha256:sha(bytes)});}}));
+files.sort((a,b)=>a.path.localeCompare(b.path));
+const app=await readFile(resolve(directory,'FlowSketch.exe'));
+for(const marker of ['FLOWSKETCH_TEST_DIRECTORY','TAURI_WEBDRIVER_PORT'])assert.ok(!app.includes(Buffer.from(marker)),'Test-only marker in ordinary EXE: '+marker);
+const original=JSON.parse(await readFile(resolve(root,'spikes/tauri/runtime-review/manifest.json'),'utf8'));
+const headerFiles=files.filter(f=>f.path.startsWith('toolchain/'));
+assert.equal(headerFiles.length,4077);
+const originalFiles=original.files;
+for(const file of headerFiles){const expected=originalFiles.find(f=>f.path===file.path.slice('toolchain/'.length));assert.ok(expected,'Header missing from pinned profile: '+file.path);assert.equal(file.sha256,expected.sha256);}
+const executableSource=process.env.FLOWSKETCH_PACKAGED_SOURCE||resolve(root,'src-tauri/target/debug/flowsketch.exe');
+const sourceApp=await readFile(executableSource);assert.equal(sha(sourceApp),sha(app));
+const analyzer=await readFile(resolve(directory,'analyzer/flowsketch-analyzer.exe'));
+const sourceAnalyzer=await readFile(resolve(root,'native/analyzer/build/bin/flowsketch-analyzer.exe'));
+assert.equal(sha(analyzer),sha(sourceAnalyzer),'Packaged analyzer must match this checkout build');
+const manifest={schemaVersion:1,generatedAt:new Date().toISOString(),prototype:true,cleanWindowsVerified:false,testBuild:false,embeddedUi:true,headersMatchPinnedProfile:true,executableSource:relative(root,executableSource).replaceAll('\\','/'),fileCount:files.length,totalBytes:files.reduce((n,f)=>n+f.bytes,0),files};
+await writeFile(resolve(directory,'manifest.json'),JSON.stringify(manifest,null,2));
+await writeFile(resolve(root,'spikes/tauri/evidence/package-verification.json'),JSON.stringify({...manifest,files:undefined,appSha256:sha(app),analyzerSha256:sha(analyzer),headerFileCount:headerFiles.length},null,2));
+console.log(JSON.stringify({files:files.length,bytes:manifest.totalBytes,appSha256:sha(app),headerProfileVerified:true}));

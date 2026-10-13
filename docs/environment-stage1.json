@@ -1,0 +1,58 @@
+{
+  "Date": "2026-10-13",
+  "OS": {
+    "Caption": "Майкрософт Windows 11 Pro",
+    "Version": "10.0.26100",
+    "BuildNumber": "26100",
+    "OSArchitecture": "64-разрядная"
+  },
+  "CPU": {
+    "Name": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "System": {
+    "MemoryGiB": 15.71
+  },
+  "Node": "v24.11.1",
+  "Npm": "11.6.2",
+  "WebView2Versions": "154.0.4258.62",
+  "RustAvailable": false,
+  "ReferenceFiles": [
+    {
+      "Name": "01-code-to-flowchart-v1.png",
+      "Bytes": 1373431,
+      "SHA256": "FD50E8217C2B1CAED220E28FB5DBCEC230C750A5E2022301184870A297B9B056"
+    },
+    {
+      "Name": "02-formatting-v1.png",
+      "Bytes": 1535322,
+      "SHA256": "1ED0777A4F23C43D71E7751A41CEE9A00AEB11F062DC497F270A8E4DAD75C4C6"
+    },
+    {
+      "Name": "03-template-gallery-v1.png",
+      "Bytes": 1455339,
+      "SHA256": "0226B687693FB2753032BCF36E4ACA55324D33CB5F9C059D564FBE9790843E68"
+    },
+    {
+      "Name": "design-brief-and-prompts.txt",
+      "Bytes": 18788,
+      "SHA256": "4372F24A668C4F969689B63E5A5E34049414694774B54758AB381AECE1AC148D"
+    },
+    {
+      "Name": "requirements-v1.html",
+      "Bytes": 144661,
+      "SHA256": "5EAE3878BD4C87541B36856A527DB1C80BA43FDCABB709F44DED7D56C1F93D09"
+    },
+    {
+      "Name": "requirements-v1.json",
+      "Bytes": 150015,
+      "SHA256": "814D83EFEAD5496BE9FD7F270161088DD464E4C4DE6CB251ACD7E115D80159F4"
+    },
+    {
+      "Name": "requirements-v1.pdf",
+      "Bytes": 183302,
+      "SHA256": "134DA2F8718DC68D72AAA864DBDA2A0D984EC101688CC87A14C2B2EB0D85FE0D"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-12T18:56:04.852Z",
+  "scope": "All supported AST/CFG spike graphs plus added feedback regressions through the actual layout module. Existing Clang artifacts reused; no compilation or source execution in this check. This is not full C++ or production UI acceptance.",
+  "feedbackContract": "role=back or layoutHint=back; semantic roles and edge labels remain unchanged",
+  "summary": {
+    "originalGraphCases": 14,
+    "feedbackGraphCases": 7,
+    "cases": 21,
+    "passed": 21,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "sumOdd",
+      "status": "passed",
+      "nodes": 10,
+      "edges": 11,
+      "sceneBounds": [
+        574,
+        1006
+      ],
+      "sceneDigest": "1521539e3981198776ad2bc15568a3147a11223d9872882e18aca58135c320a0",
+      "graphFile": "spikes\\clang\\results\\sumOdd\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 332.521
+    },
+    {
+      "id": "forContinue",
+      "status": "passed",
+      "nodes": 10,
+      "edges": 11,
+      "sceneBounds": [
+        574,
+        1006
+      ],
+      "sceneDigest": "3e10779277d99ef1fad52dd175cd4d9360ae2c53cf1b865a24a24ae6bf684ebd",
+      "graphFile": "spikes\\clang\\results\\forContinue\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 299.541
+    },
+    {
+      "id": "whileContinue",
+      "status": "passed",
+      "nodes": 9,
+      "edges": 10,
+      "sceneBounds": [
+        531,
+        876
+      ],
+      "sceneDigest": "4274ac10af20be18f7ccdfc4c49edde185f1fac84505eaf5c3304a7d37fb82ef",
+      "graphFile": "spikes\\clang\\results\\whileContinue\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 2,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 294.1
+    },
+    {
+      "id": "doContinue",
+      "status": "passed",
+      "nodes": 9,
+      "edges": 10,
+      "sceneBounds": [
+        474,
+        1084
+      ],
+      "sceneDigest": "e67ee901d039b2d2eb13109ff6f0250123076fcd9a0fefebf6cc4fa3f95e3f08",
+      "graphFile": "spikes\\clang\\results\\doContinue\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 284.189
+    },
+    {
+      "id": "nestedBreak",
+      "status": "passed",
+      "nodes": 14,
+      "edges": 16,
+      "sceneBounds": [
+        694,
+        1422
+      ],
+      "sceneDigest": "50f63b90e523d63efca241fba440f314218e477d7cde8b52e927788e470583c9",
+      "graphFile": "spikes\\clang\\results\\nestedBreak\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 2,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 325.327
+    },
+    {
+      "id": "switchFallthrough",
+      "status": "passed",
+      "nodes": 9,
+      "edges": 10,
+      "sceneBounds": [
+        424,
+        954
+      ],
+      "sceneDigest": "3103ceca1a9a3e269bc41717a61bebd946266a4248d79f0c7127eae2dadbb39c",
+      "graphFile": "spikes\\clang\\results\\switchFallthrough\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 284.762
+    },
+    {
+      "id": "switchNoDefault",
+      "status": "passed",
+      "nodes": 7,
+      "edges": 7,
+      "sceneBounds": [
+        448,
+        850
+      ],
+      "sceneDigest": "e7d3db4437a7356f44df2086a5ee79d41073addc39ac41db85fa692cd6b108d6",
+      "graphFile": "spikes\\clang\\results\\switchNoDefault\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 261.351
+    },
+    {
+      "id": "switchContinue",
+      "status": "passed",
+      "nodes": 11,
+      "edges": 12,
+      "sceneBounds": [
+        572,
+        1110
+      ],
+      "sceneDigest": "edc20101d40cece61cb4ad2cc946b994f80cf8d110a20aacc05e307ad0d7e993",
+      "graphFile": "spikes\\clang\\results\\switchContinue\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 241.074
+    },
+    {
+      "id": "shortCircuitAnd",
+      "status": "passed",
+      "nodes": 7,
+      "edges": 8,
+      "sceneBounds": [
+        426,
+        876
+      ],
+      "sceneDigest": "cf256d8ab3dfbfbdfe8b81508dfb84d9eeec32274a46399d9aa016fa29aa42a2",
+      "graphFile": "spikes\\clang\\results\\shortCircuitAnd\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 241.447
+    },
+    {
+      "id": "shortCircuitOr",
+      "status": "passed",
+      "nodes": 7,
+      "edges": 8,
+      "sceneBounds": [
+        465,
+        876
+      ],
+      "sceneDigest": "634b8ff7154fb87c4a041719a3f1ed8922dbdb8040d611ec12ead05c365d6c2f",
+      "graphFile": "spikes\\clang\\results\\shortCircuitOr\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 233.031
+    },
+    {
+      "id": "earlyReturn",
+      "status": "passed",
+      "nodes": 6,
+      "edges": 6,
+      "sceneBounds": [
+        624,
+        538
+      ],
+      "sceneDigest": "6ff5f301770d97016a716176bb65c5f03f0ca71069271555770742e682ad7818",
+      "graphFile": "spikes\\clang\\results\\earlyReturn\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 238.479
+    },
+    {
+      "id": "implicitMain",
+      "status": "passed",
+      "nodes": 4,
+      "edges": 3,
+      "sceneBounds": [
+        208,
+        408
+      ],
+      "sceneDigest": "35bfa57fa3867b873bb27ea3f5e76e5a316c7a55715ee43fb4b787cd672ffa09",
+      "graphFile": "spikes\\clang\\results\\implicitMain\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 221.034
+    },
+    {
+      "id": "ifElse",
+      "status": "passed",
+      "nodes": 6,
+      "edges": 6,
+      "sceneBounds": [
+        426,
+        642
+      ],
+      "sceneDigest": "39dc27b85902b1dcc83cf71e7fbe04875719b7d18a7543b426bd7bb996a7cb46",
+      "graphFile": "spikes\\clang\\results\\ifElse\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 0,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 239.963
+    },
+    {
+      "id": "utf8Offsets",
+      "status": "passed",
+      "nodes": 8,
+      "edges": 8,
+      "sceneBounds": [
+        444,
+        746
+      ],
+      "sceneDigest": "08befa6f2703bb323495341ff046bdde54da7ca1f4e05fd2e8fd166d873d4fdb",
+      "graphFile": "spikes\\clang\\results\\utf8Offsets\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 233.595
+    },
+    {
+      "id": "emptyWhile",
+      "status": "passed",
+      "nodes": 3,
+      "edges": 3,
+      "sceneBounds": [
+        365,
+        434
+      ],
+      "sceneDigest": "431b0f3508dd2a8e9696f28f2dfaed6c65e083e2ecc0e1638f96295a2fbadcf0",
+      "graphFile": "spikes\\clang\\results\\emptyWhile\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 239.263
+    },
+    {
+      "id": "emptyWhileAnd",
+      "status": "passed",
+      "nodes": 4,
+      "edges": 5,
+      "sceneBounds": [
+        373,
+        668
+      ],
+      "sceneDigest": "fbf85dbfd2241de4d8fe0f45c8fdd410bc9e594b31117a7015b32d197182733c",
+      "graphFile": "spikes\\clang\\results\\emptyWhileAnd\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 220.351
+    },
+    {
+      "id": "emptyForNoIncrement",
+      "status": "passed",
+      "nodes": 3,
+      "edges": 3,
+      "sceneBounds": [
+        365,
+        434
+      ],
+      "sceneDigest": "3d2b3d7bf7ddbf15ce71497f6414952e33a697d0ed7435434579c5a99c1e541c",
+      "graphFile": "spikes\\clang\\results\\emptyForNoIncrement\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 227.548
+    },
+    {
+      "id": "forContinueNoIncrement",
+      "status": "passed",
+      "nodes": 4,
+      "edges": 4,
+      "sceneBounds": [
+        444,
+        434
+      ],
+      "sceneDigest": "e7ed2680337041deb5a12411dea197817cd5b753d0afa855dd4db4d04b11a304",
+      "graphFile": "spikes\\clang\\results\\forContinueNoIncrement\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 233.438
+    },
+    {
+      "id": "emptyDo",
+      "status": "passed",
+      "nodes": 3,
+      "edges": 3,
+      "sceneBounds": [
+        365,
+        434
+      ],
+      "sceneDigest": "8e5eeb62ef09995bfebf91873e7ccd9fd0e6af23ae9b88513c7d8ccfba353f5d",
+      "graphFile": "spikes\\clang\\results\\emptyDo\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 217.661
+    },
+    {
+      "id": "emptyIfWhile",
+      "status": "passed",
+      "nodes": 4,
+      "edges": 5,
+      "sceneBounds": [
+        483,
+        486
+      ],
+      "sceneDigest": "eb1d69076226f0cb08a77f24e353024c3e61efdd34ea0e1ebeca3265049ab65d",
+      "graphFile": "spikes\\clang\\results\\emptyIfWhile\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 2,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 229.905
+    },
+    {
+      "id": "emptyForever",
+      "status": "passed",
+      "nodes": 3,
+      "edges": 2,
+      "sceneBounds": [
+        398,
+        312
+      ],
+      "sceneDigest": "70236b9697113aefc4f82e78e67aa42fb022929ee1346edb5aaeb66052ee9e54",
+      "graphFile": "spikes\\clang\\results\\emptyForever\\graph.json",
+      "inputGraphUnchanged": true,
+      "semanticTransitionsPreserved": true,
+      "feedbackEdges": 1,
+      "endpointFailures": 0,
+      "forwardUpward": 0,
+      "entryTopmost": true,
+      "diagnostics": [],
+      "layoutMs": 233.579
+    }
+  ]
+}

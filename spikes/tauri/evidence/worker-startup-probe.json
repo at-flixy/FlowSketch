@@ -1,0 +1,23 @@
+{
+  "mainAsset": {
+    "data": {
+      "id": 1
+    },
+    "status": "message"
+  },
+  "nestedAsset": {
+    "data": {
+      "ok": false
+    },
+    "status": "message"
+  },
+  "nestedBlob": {
+    "data": {
+      "data": {
+        "id": 1
+      },
+      "ok": true
+    },
+    "status": "message"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-12T18:56:01.237Z",
+  "toolchain": {
+    "release": "20261006",
+    "source": "https://github.com/mstorsjo/llvm-mingw/releases/download/20261006/llvm-mingw-20261006-ucrt-x86_64.zip",
+    "sha256": "317492c456aa27ee607a5919f1d2d38dcdc1112516a24d0bf4b00d078f52d17a"
+  },
+  "scope": "Two independent sumOdd integration checks using real Clang AST/CFG. No execution/linking of submitted C++. Not full C++17 or production release acceptance.",
+  "results": [
+    {
+      "id": "sumOdd",
+      "status": "passed",
+      "sourceDigest": "a7513cf59f96dcbd9efbe45e0f3d498334f781904a4a9b8e0afe698892a08aba",
+      "oracle": {
+        "passed": true,
+        "requiredSemanticNodes": 7,
+        "nodes": 10,
+        "edges": 11,
+        "scope": "Independent approved sumOdd control-flow oracle; not full C++17 coverage"
+      },
+      "sourceMappingNodesChecked": 8,
+      "astBytes": 24254,
+      "cfgBytes": 1017,
+      "sceneBounds": [
+        574,
+        1006
+      ],
+      "sceneDigest": "278b1c5fe78c0bf9d667104d4134051726afbd7213e0b1a7053a3fa1ff6831d0",
+      "inputGraphUnchanged": true,
+      "semanticEdgesPreserved": true,
+      "layoutDiagnostics": [],
+      "files": {
+        "scene": {
+          "path": "spikes\\integration\\out\\sumOdd.scene.json",
+          "bytes": 71497,
+          "sha256": "dad7264ae46835f46202ebbdcdc8bd82775682fe17dd8811f05953a5e12cd41f"
+        },
+        "svg": {
+          "path": "spikes\\integration\\out\\sumOdd.svg",
+          "bytes": 34869,
+          "sha256": "7339fd94a372401b398a05016221b1b4d3020c9c592bbc8e28263362e66171b7"
+        },
+        "pdf": {
+          "path": "spikes\\integration\\out\\sumOdd.pdf",
+          "bytes": 7480,
+          "sha256": "86c5ec00ddcecb0abc5c4a815b597fb6456d1d79a7183631800fa9b40e0f48d5"
+        },
+        "png": {
+          "path": "spikes\\integration\\out\\sumOdd.png",
+          "bytes": 24045,
+          "sha256": "7d7c9a7cf026a4fe6e66c6b90783d175e3c389d7035800029d4a9cbb887e3f17"
+        }
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          430.5,
+          754.5
+        ],
+        "pngSize": [
+          574,
+          1006
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.983933,
+        "meanAbsoluteRgbDifference": 0.915824,
+        "pdfRendered": "spikes\\integration\\out\\sumOdd.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      },
+      "timingsMs": {
+        "syntax": 54,
+        "ast": 58,
+        "cfg": 59,
+        "layout": 321.904,
+        "png": 12.47,
+        "pdf": 19.937,
+        "total": 897
+      }
+    },
+    {
+      "id": "sumOddUtf8",
+      "status": "passed",
+      "sourceDigest": "49838d6bd2783acf424719ee12ecdee2281ec880d25df6bd7dbbd183aa787a54",
+      "oracle": {
+        "passed": true,
+        "requiredSemanticNodes": 7,
+        "nodes": 10,
+        "edges": 11,
+        "scope": "Independent approved sumOdd control-flow oracle; not full C++17 coverage"
+      },
+      "sourceMappingNodesChecked": 8,
+      "astBytes": 24311,
+      "cfgBytes": 1017,
+      "sceneBounds": [
+        574,
+        1006
+      ],
+      "sceneDigest": "59f3553554da418e0bf86307d40de5da2432c4be8d67799233278027f1678e77",
+      "inputGraphUnchanged": true,
+      "semanticEdgesPreserved": true,
+      "layoutDiagnostics": [],
+      "files": {
+        "scene": {
+          "path": "spikes\\integration\\out\\sumOddUtf8.scene.json",
+          "bytes": 71583,
+          "sha256": "529f00fa23c44f97650a153449a3914d10f5b36435304ffa24f14b3be64ba361"
+        },
+        "svg": {
+          "path": "spikes\\integration\\out\\sumOddUtf8.svg",
+          "bytes": 34901,
+          "sha256": "b707f04220903fe58953fae8f51c74dd41adda5f0b5a230c873560ef0bed6882"
+        },
+        "pdf": {
+          "path": "spikes\\integration\\out\\sumOddUtf8.pdf",
+          "bytes": 7514,
+          "sha256": "111b44e195468a0001c9546dec12dd711db8e11c456390b7722b0aff72557068"
+        },
+        "png": {
+          "path": "spikes\\integration\\out\\sumOddUtf8.png",
+          "bytes": 24045,
+          "sha256": "7d7c9a7cf026a4fe6e66c6b90783d175e3c389d7035800029d4a9cbb887e3f17"
+        }
+      },
+      "independentRender": {
+        "pdfPages": 1,
+        "pdfBoundsPt": [
+          430.5,
+          754.5
+        ],
+        "pngSize": [
+          574,
+          1006
+        ],
+        "pdfHasRasterXObjects": false,
+        "darkForegroundIoU": 0.983933,
+        "meanAbsoluteRgbDifference": 0.915824,
+        "pdfRendered": "spikes\\integration\\out\\sumOddUtf8.pdf-render.png",
+        "pdfTextPolicy": "glyph outlines, not selectable/searchable"
+      },
+      "timingsMs": {
+        "syntax": 60,
+        "ast": 50,
+        "cfg": 57,
+        "layout": 290.698,
+        "png": 10.957,
+        "pdf": 7.6,
+        "total": 873
+      }
+    }
+  ],
+  "notVerified": [
+    "Native LibTooling protocol",
+    "Full 50-case semantic matrix and STL diagram abstraction profiles",
+    "Tauri application and Windows installation",
+    "Clean VM without dev tools",
+    "Full NFR p95 performance",
+    "A4/A3 PDF pagination and manual diagram editing"
+  ]
+}

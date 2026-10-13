@@ -1,0 +1,514 @@
+{
+  "id": "nestedBreak",
+  "title": "nestedBreak",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 17,
+          "line": 1,
+          "column": 18
+        },
+        "end": {
+          "offset": 104,
+          "line": 1,
+          "column": 105
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 17,
+          "line": 1,
+          "column": 18
+        },
+        "end": {
+          "offset": 104,
+          "line": 1,
+          "column": 105
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "process",
+      "label": "return s",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 94,
+          "line": 1,
+          "column": 95
+        },
+        "end": {
+          "offset": 102,
+          "line": 1,
+          "column": 103
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "ReturnStmt"
+      },
+      "originalText": "return s",
+      "astKind": "ReturnStmt",
+      "reachable": true
+    },
+    {
+      "id": "n4",
+      "kind": "decision",
+      "label": "i<2",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 38,
+          "line": 1,
+          "column": 39
+        },
+        "end": {
+          "offset": 41,
+          "line": 1,
+          "column": 42
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "i<2",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n5",
+      "kind": "process",
+      "label": "++i",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 42,
+          "line": 1,
+          "column": 43
+        },
+        "end": {
+          "offset": 45,
+          "line": 1,
+          "column": 46
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "UnaryOperator"
+      },
+      "originalText": "++i",
+      "astKind": "UnaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n6",
+      "kind": "process",
+      "label": "s+=10",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 87,
+          "line": 1,
+          "column": 88
+        },
+        "end": {
+          "offset": 92,
+          "line": 1,
+          "column": 93
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "CompoundAssignOperator"
+      },
+      "originalText": "s+=10",
+      "astKind": "CompoundAssignOperator",
+      "reachable": true
+    },
+    {
+      "id": "n7",
+      "kind": "decision",
+      "label": "j<3",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 59,
+          "line": 1,
+          "column": 60
+        },
+        "end": {
+          "offset": 62,
+          "line": 1,
+          "column": 63
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "j<3",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n8",
+      "kind": "process",
+      "label": "++j",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 63,
+          "line": 1,
+          "column": 64
+        },
+        "end": {
+          "offset": 66,
+          "line": 1,
+          "column": 67
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "UnaryOperator"
+      },
+      "originalText": "++j",
+      "astKind": "UnaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n9",
+      "kind": "process",
+      "label": "++s",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 82,
+          "line": 1,
+          "column": 83
+        },
+        "end": {
+          "offset": 85,
+          "line": 1,
+          "column": 86
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "UnaryOperator"
+      },
+      "originalText": "++s",
+      "astKind": "UnaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n10",
+      "kind": "decision",
+      "label": "j==1",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 71,
+          "line": 1,
+          "column": 72
+        },
+        "end": {
+          "offset": 75,
+          "line": 1,
+          "column": 76
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BinaryOperator"
+      },
+      "originalText": "j==1",
+      "astKind": "BinaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n11",
+      "kind": "process",
+      "label": "break",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 76,
+          "line": 1,
+          "column": 77
+        },
+        "end": {
+          "offset": 81,
+          "line": 1,
+          "column": 82
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "BreakStmt"
+      },
+      "originalText": "break",
+      "astKind": "BreakStmt",
+      "reachable": true
+    },
+    {
+      "id": "n12",
+      "kind": "process",
+      "label": "int j=0",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 51,
+          "line": 1,
+          "column": 52
+        },
+        "end": {
+          "offset": 59,
+          "line": 1,
+          "column": 60
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int j=0;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    },
+    {
+      "id": "n13",
+      "kind": "process",
+      "label": "int i=0",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 30,
+          "line": 1,
+          "column": 31
+        },
+        "end": {
+          "offset": 38,
+          "line": 1,
+          "column": 39
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int i=0;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    },
+    {
+      "id": "n14",
+      "kind": "process",
+      "label": "int s=0",
+      "sourceRange": {
+        "file": "nestedBreak.cpp",
+        "begin": {
+          "offset": 18,
+          "line": 1,
+          "column": 19
+        },
+        "end": {
+          "offset": 26,
+          "line": 1,
+          "column": 27
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int s=0;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n1",
+      "label": "",
+      "role": "return"
+    },
+    {
+      "id": "e2",
+      "source": "n5",
+      "target": "n4",
+      "label": "",
+      "role": "back",
+      "layoutHint": "back"
+    },
+    {
+      "id": "e3",
+      "source": "n6",
+      "target": "n5",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e4",
+      "source": "n8",
+      "target": "n7",
+      "label": "",
+      "role": "back",
+      "layoutHint": "back"
+    },
+    {
+      "id": "e5",
+      "source": "n9",
+      "target": "n8",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e6",
+      "source": "n11",
+      "target": "n6",
+      "label": "",
+      "role": "break"
+    },
+    {
+      "id": "e7",
+      "source": "n10",
+      "target": "n11",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e8",
+      "source": "n10",
+      "target": "n9",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e9",
+      "source": "n7",
+      "target": "n10",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e10",
+      "source": "n7",
+      "target": "n6",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e11",
+      "source": "n12",
+      "target": "n7",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e12",
+      "source": "n4",
+      "target": "n12",
+      "label": "Да",
+      "role": "true",
+      "conditionBranch": "true"
+    },
+    {
+      "id": "e13",
+      "source": "n4",
+      "target": "n3",
+      "label": "Нет",
+      "role": "false",
+      "conditionBranch": "false"
+    },
+    {
+      "id": "e14",
+      "source": "n13",
+      "target": "n4",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e15",
+      "source": "n14",
+      "target": "n13",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e16",
+      "source": "n2",
+      "target": "n14",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": null,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}

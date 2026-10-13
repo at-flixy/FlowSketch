@@ -1,0 +1,19 @@
+.fs-diagram { display:flex; flex-direction:column; min-height:0; height:100%; width:100%; }
+.fs-diagram-toolbar { display:flex; align-items:center; justify-content:flex-end; gap:2px; padding:7px 12px; background:#1a2030; border-bottom:1px solid #303a50; min-height:44px; }
+.fs-diagram-toolbar button { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:32px; border:1px solid #3a465e; background:#222b3b; color:#e6eaf5; border-radius:6px; font:inherit; cursor:pointer; transition:background 120ms ease,border-color 120ms ease; }
+.fs-diagram-toolbar button:hover { background:#303a54; border-color:#7c83ff; }
+.fs-diagram-toolbar button:focus-visible { outline:2px solid #a6afff; outline-offset:2px; }
+.fs-diagram-toolbar button:disabled { opacity:.4; cursor:default; }
+.fs-diagram-toolbar .fs-diagram-percent { min-width:58px; font-size:12px; font-variant-numeric:tabular-nums; }
+.fs-diagram-stale { color:#ffcf81; padding-left:12px; font-size:12px; }
+.fs-diagram-surface { position:relative; flex:1; min-height:180px; overflow:hidden; touch-action:none; background-color:#f7f8fc; background-image:radial-gradient(#dce1f0 .65px,transparent .65px); background-size:20px 20px; cursor:grab; outline:none; }
+.fs-diagram-surface:focus-visible { box-shadow:inset 0 0 0 2px #7c83ff; }
+.fs-diagram-surface.is-panning { cursor:grabbing; }
+.fs-diagram-surface > svg { display:block; user-select:none; }
+.fs-diagram-hit { fill:transparent; stroke:transparent; stroke-width:2; cursor:pointer; transition:stroke 120ms ease; }
+.fs-diagram-hit:hover { stroke:#9ba4ef; }
+.fs-diagram-hit.is-selected { stroke:#7079ec; stroke-width:2.5; }
+.fs-diagram-surface g[role=button]:focus { outline:none; }
+.fs-diagram-surface g[role=button]:focus-visible .fs-diagram-hit { stroke:#4f5dc3; stroke-width:3; }
+.fs-diagram-empty { display:grid; height:100%; place-items:center; color:#66718a; font-size:14px; }
+@media (prefers-reduced-motion:reduce) { .fs-diagram-toolbar button,.fs-diagram-hit { transition:none; } }

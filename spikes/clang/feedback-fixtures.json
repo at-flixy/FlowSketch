@@ -1,0 +1,113 @@
+[
+  {
+    "id": "emptyWhile",
+    "name": "emptyWhile",
+    "feature": "empty while true self-edge retains logical branch",
+    "source": "void emptyWhile(bool keep){while(keep){}}\n",
+    "expectHints": [
+      [
+        "keep",
+        "keep",
+        "true",
+        "back",
+        "Да"
+      ]
+    ]
+  },
+  {
+    "id": "emptyWhileAnd",
+    "name": "emptyWhileAnd",
+    "feature": "short-circuit empty while feedback from RHS to LHS",
+    "source": "void emptyWhileAnd(bool a,bool b){while(a && b){}}\n",
+    "expectHints": [
+      [
+        "a",
+        "b",
+        "true",
+        null,
+        "Да"
+      ],
+      [
+        "b",
+        "a",
+        "true",
+        "back",
+        "Да"
+      ]
+    ]
+  },
+  {
+    "id": "emptyForNoIncrement",
+    "name": "emptyForNoIncrement",
+    "feature": "empty for without increment feedback true edge",
+    "source": "void emptyForNoIncrement(bool keep){for(;keep;){}}\n",
+    "expectHints": [
+      [
+        "keep",
+        "keep",
+        "true",
+        "back",
+        "Да"
+      ]
+    ]
+  },
+  {
+    "id": "forContinueNoIncrement",
+    "name": "forContinueNoIncrement",
+    "feature": "for continue without increment targets header as feedback",
+    "source": "void forContinueNoIncrement(bool keep){for(;keep;){continue;}}\n",
+    "expectHints": [
+      [
+        "continue",
+        "keep",
+        "continue",
+        "back",
+        ""
+      ]
+    ]
+  },
+  {
+    "id": "emptyDo",
+    "name": "emptyDo",
+    "feature": "do empty body loop true self edge",
+    "source": "void emptyDo(bool keep){do{}while(keep);}\n",
+    "expectHints": [
+      [
+        "keep",
+        "keep",
+        "back",
+        "back",
+        "Да"
+      ]
+    ],
+    "expectedConditionBranches": [
+      [
+        "keep",
+        "keep",
+        "true"
+      ]
+    ]
+  },
+  {
+    "id": "emptyIfWhile",
+    "name": "emptyIfWhile",
+    "feature": "empty if-body inside while retains guarded feedback",
+    "source": "void emptyIfWhile(bool keep,bool flag){while(keep){if(flag){}}}\n",
+    "expectHints": [
+      [
+        "flag",
+        "keep",
+        "true",
+        "back",
+        "Да"
+      ]
+    ]
+  },
+  {
+    "id": "emptyForever",
+    "name": "emptyForever",
+    "feature": "empty infinite for has feedback, no invented false branch",
+    "source": "void emptyForever(){for(;;){}}\n",
+    "expectedEmptyForever": true
+  }
+]

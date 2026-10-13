@@ -1,0 +1,10 @@
+{
+  "source": "https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe",
+  "rustupSha256": "6f4bef66261261fcb43131be8720bab817d403a09edec7455c371974b90bdb7e",
+  "cargoHome": "tools\\cargo",
+  "rustupHome": "tools\\rustup",
+  "rustcVersion": "rustc 1.99.0 (b940084d7 2026-09-28)",
+  "cargoVersion": "cargo 1.99.0 (5f94df478 2026-08-27)",
+  "target": "x86_64-pc-windows-msvc",
+  "persistentPathChanged": false
+}

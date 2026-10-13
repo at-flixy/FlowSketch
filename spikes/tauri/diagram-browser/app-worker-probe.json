@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "data": {
+        "id": 0
+      },
+      "type": "MESSAGE"
+    },
+    {
+      "data": {
+        "data": {
+          "$H": 13,
+          "children": [
+            {
+              "$H": 277,
+              "height": 40,
+              "id": "a",
+              "width": 100,
+              "x": 12,
+              "y": 12
+            }
+          ],
+          "height": 64,
+          "id": "probe",
+          "layoutOptions": {
+            "elk.algorithm": "layered"
+          },
+          "width": 124,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1
+      },
+      "type": "MESSAGE"
+    }
+  ],
+  "headers": {
+    "csp": null,
+    "prefix": "'use strict';\n\n// --------------    FAKE ELEMENTS GWT ASSUMES EXIST   ----------",
+    "status": 200,
+    "type": "text/javascript"
+  },
+  "url": "http://tauri.localhost/"
+}

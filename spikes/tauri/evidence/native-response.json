@@ -1,0 +1,461 @@
+{
+  "analyzerVersion": "flowsketch-native-0.1.0/clang-23.1.3",
+  "cfgSummary": {
+    "blocks": 9,
+    "edges": 10,
+    "exceptionEdges": false,
+    "implicitDestructors": false,
+    "pruneTriviallyFalseEdges": false,
+    "sourceLevel": true
+  },
+  "contextDigest": "e8395a56d3f8cd813a8b7ebfdcb97259e944df318116a036509696df9bfb132c",
+  "coverage": {
+    "full50CaseAcceptance": false,
+    "implicitObjectActionsAndExceptions": false,
+    "normalFlowOnly": true,
+    "profile": "native-scalar-cpp17-vertical-slice",
+    "sourceExecution": false
+  },
+  "diagnostics": [],
+  "elapsedMs": 259,
+  "functionId": "sumOdd(int)",
+  "functions": [
+    {
+      "id": "sumOdd(int)",
+      "name": "sumOdd",
+      "signature": "int sumOdd(int)",
+      "sourceRange": {
+        "begin": {
+          "column": 1,
+          "line": 2,
+          "offset": 51,
+          "utf16Column": 1
+        },
+        "columnEncoding": "utf8-bytes",
+        "end": {
+          "column": 2,
+          "line": 9,
+          "offset": 192,
+          "utf16Column": 2
+        },
+        "endExclusive": true,
+        "file": "input.cpp",
+        "offsetEncoding": "utf8-bytes",
+        "synthetic": false
+      },
+      "supported": true
+    },
+    {
+      "id": "twice(int)",
+      "name": "twice",
+      "signature": "int twice(int)",
+      "sourceRange": {
+        "begin": {
+          "column": 1,
+          "line": 10,
+          "offset": 193,
+          "utf16Column": 1
+        },
+        "columnEncoding": "utf8-bytes",
+        "end": {
+          "column": 35,
+          "line": 10,
+          "offset": 227,
+          "utf16Column": 35
+        },
+        "endExclusive": true,
+        "file": "input.cpp",
+        "offsetEncoding": "utf8-bytes",
+        "synthetic": false
+      },
+      "supported": true
+    }
+  ],
+  "graph": {
+    "abstractions": [],
+    "coverage": {
+      "implicitActionsAndExceptions": false,
+      "nativeLibTooling": true,
+      "scope": "selected-function normal flow",
+      "sourceExecution": false,
+      "stlSemanticProfiles": false
+    },
+    "diagnostics": [],
+    "edges": [
+      {
+        "id": "e1",
+        "label": "",
+        "role": "return",
+        "source": "n3",
+        "target": "n1"
+      },
+      {
+        "id": "e2",
+        "label": "",
+        "layoutHint": "back",
+        "role": "back",
+        "source": "n5",
+        "target": "n4"
+      },
+      {
+        "id": "e3",
+        "label": "",
+        "role": "normal",
+        "source": "n6",
+        "target": "n5"
+      },
+      {
+        "id": "e4",
+        "label": "",
+        "role": "continue",
+        "source": "n8",
+        "target": "n5"
+      },
+      {
+        "conditionBranch": "true",
+        "id": "e5",
+        "label": "Да",
+        "role": "true",
+        "source": "n7",
+        "target": "n8"
+      },
+      {
+        "conditionBranch": "false",
+        "id": "e6",
+        "label": "Нет",
+        "role": "false",
+        "source": "n7",
+        "target": "n6"
+      },
+      {
+        "conditionBranch": "true",
+        "id": "e7",
+        "label": "Да",
+        "role": "true",
+        "source": "n4",
+        "target": "n7"
+      },
+      {
+        "conditionBranch": "false",
+        "id": "e8",
+        "label": "Нет",
+        "role": "false",
+        "source": "n4",
+        "target": "n3"
+      },
+      {
+        "id": "e9",
+        "label": "",
+        "role": "normal",
+        "source": "n9",
+        "target": "n4"
+      },
+      {
+        "id": "e10",
+        "label": "",
+        "role": "normal",
+        "source": "n10",
+        "target": "n9"
+      },
+      {
+        "id": "e11",
+        "label": "",
+        "role": "normal",
+        "source": "n2",
+        "target": "n10"
+      }
+    ],
+    "entryId": "n2",
+    "exitId": "n1",
+    "id": "sumOdd(int)",
+    "nodes": [
+      {
+        "astKind": "CompoundStmt",
+        "id": "n1",
+        "kind": "terminator",
+        "label": "Конец",
+        "originalText": null,
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 19,
+            "line": 2,
+            "offset": 69,
+            "utf16Column": 19
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 2,
+            "line": 9,
+            "offset": 192,
+            "utf16Column": 2
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "CompoundStmt",
+          "synthetic": true
+        }
+      },
+      {
+        "astKind": "CompoundStmt",
+        "id": "n2",
+        "kind": "terminator",
+        "label": "Начало",
+        "originalText": null,
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 19,
+            "line": 2,
+            "offset": 69,
+            "utf16Column": 19
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 2,
+            "line": 9,
+            "offset": 192,
+            "utf16Column": 2
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "CompoundStmt",
+          "synthetic": true
+        }
+      },
+      {
+        "astKind": "ReturnStmt",
+        "id": "n3",
+        "kind": "process",
+        "label": "return s",
+        "originalText": "return s",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 5,
+            "line": 8,
+            "offset": 181,
+            "utf16Column": 5
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 13,
+            "line": 8,
+            "offset": 189,
+            "utf16Column": 13
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "ReturnStmt",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "BinaryOperator",
+        "id": "n4",
+        "kind": "decision",
+        "label": "i <= n",
+        "originalText": "i <= n",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 21,
+            "line": 4,
+            "offset": 106,
+            "utf16Column": 21
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 27,
+            "line": 4,
+            "offset": 112,
+            "utf16Column": 27
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "BinaryOperator",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "UnaryOperator",
+        "id": "n5",
+        "kind": "process",
+        "label": "++i",
+        "originalText": "++i",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 29,
+            "line": 4,
+            "offset": 114,
+            "utf16Column": 29
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 32,
+            "line": 4,
+            "offset": 117,
+            "utf16Column": 32
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "UnaryOperator",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "CompoundAssignOperator",
+        "id": "n6",
+        "kind": "process",
+        "label": "s += i",
+        "originalText": "s += i",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 9,
+            "line": 6,
+            "offset": 163,
+            "utf16Column": 9
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 15,
+            "line": 6,
+            "offset": 169,
+            "utf16Column": 15
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "CompoundAssignOperator",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "BinaryOperator",
+        "id": "n7",
+        "kind": "decision",
+        "label": "i % 2 == 0",
+        "originalText": "i % 2 == 0",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 13,
+            "line": 5,
+            "offset": 133,
+            "utf16Column": 13
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 23,
+            "line": 5,
+            "offset": 143,
+            "utf16Column": 23
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "BinaryOperator",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "ContinueStmt",
+        "id": "n8",
+        "kind": "process",
+        "label": "continue",
+        "originalText": "continue",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 25,
+            "line": 5,
+            "offset": 145,
+            "utf16Column": 25
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 33,
+            "line": 5,
+            "offset": 153,
+            "utf16Column": 33
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "ContinueStmt",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "DeclStmt",
+        "id": "n9",
+        "kind": "process",
+        "label": "int i = 1",
+        "originalText": "int i = 1;",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 10,
+            "line": 4,
+            "offset": 95,
+            "utf16Column": 10
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 20,
+            "line": 4,
+            "offset": 105,
+            "utf16Column": 20
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "DeclStmt",
+          "synthetic": false
+        }
+      },
+      {
+        "astKind": "DeclStmt",
+        "id": "n10",
+        "kind": "process",
+        "label": "int s = 0",
+        "originalText": "int s = 0;",
+        "reachable": true,
+        "sourceRange": {
+          "begin": {
+            "column": 5,
+            "line": 3,
+            "offset": 75,
+            "utf16Column": 5
+          },
+          "columnEncoding": "utf8-bytes",
+          "end": {
+            "column": 15,
+            "line": 3,
+            "offset": 85,
+            "utf16Column": 15
+          },
+          "endExclusive": true,
+          "file": "input.cpp",
+          "offsetEncoding": "utf8-bytes",
+          "originKind": "DeclStmt",
+          "synthetic": false
+        }
+      }
+    ],
+    "status": "BUILT_NORMAL_FLOW",
+    "title": "sumOdd"
+  },
+  "protocolVersion": 1,
+  "requestId": "qa-direct-99",
+  "sourceDigest": "8de9369ec39555bb6cfdd544089d6be4e92d757ef59ca526f7c5e4a6300684bd",
+  "sourceRevision": 99,
+  "status": "BUILT_NORMAL_FLOW"
+}

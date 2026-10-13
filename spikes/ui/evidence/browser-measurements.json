@@ -1,0 +1,46 @@
+{
+  "buttonText": "rgb(17, 21, 43)",
+  "docWidth": 640,
+  "focusAfterEscape": {
+    "label": "Шаблоны оформления",
+    "tag": "BUTTON"
+  },
+  "mutedText": "rgb(232, 237, 248)",
+  "primaryText": "rgb(232, 237, 248)",
+  "viewport": {
+    "height": 480,
+    "width": 640
+  },
+  "contrast": [
+    {
+      "role": "Primary",
+      "fg": "#e8edf8",
+      "bg": "#171f2d",
+      "ratio": 14.09
+    },
+    {
+      "role": "Muted",
+      "fg": "#adbad0",
+      "bg": "#18212f",
+      "ratio": 8.26
+    },
+    {
+      "role": "Primary button",
+      "fg": "#11152b",
+      "bg": "#7870fc",
+      "ratio": 4.74
+    },
+    {
+      "role": "Canvas helper",
+      "fg": "#61708b",
+      "bg": "#f7f8fc",
+      "ratio": 4.71
+    },
+    {
+      "role": "Readonly",
+      "fg": "#b1bdd3",
+      "bg": "#1c2636",
+      "ratio": 8.04
+    }
+  ]
+}

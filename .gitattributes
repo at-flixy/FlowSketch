@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.ttf binary
+*.ico binary
+*.icns binary
+*.woff binary
+*.woff2 binary
+
+# Preserve approved reference artifacts and the upstream license byte for byte.
+docs/reference/** -text -whitespace
+spikes/layout-export/fonts/LICENSE_LIBERATION.txt -text -whitespace
+src/diagram/fonts/LICENSE_LIBERATION.txt -text -whitespace
+docs/distribution-notices/** -text -whitespace
+native/analyzer/notices/** -text -whitespace
+spikes/tauri/runtime-review/notices-source/** -text -whitespace

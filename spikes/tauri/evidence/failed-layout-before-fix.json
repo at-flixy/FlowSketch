@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-10-13T07:54:54.366Z",
+  "runtime": "Tauri + Windows WebView2",
+  "mockAnalyzer": false,
+  "mockGraph": false,
+  "submittedCodeExecuted": false,
+  "dialogPathSelection": "test-only fixture directory; real native file handlers",
+  "interactiveNativeDialogAutomated": false,
+  "full50CaseAcceptance": false,
+  "cleanWindowsAcceptance": false,
+  "steps": [
+    {
+      "name": "real-desktop-origin",
+      "passed": true,
+      "detail": {
+        "dpr": 1.25,
+        "height": 900,
+        "width": 1440,
+        "url": "http://tauri.localhost/"
+      }
+    },
+    {
+      "name": "cpp-real-file-open",
+      "passed": true,
+      "detail": {
+        "sourceSha256": "8de9369ec39555bb6cfdd544089d6be4e92d757ef59ca526f7c5e4a6300684bd"
+      }
+    },
+    {
+      "name": "native-function-discovery",
+      "passed": true,
+      "detail": [
+        {
+          "label": "Автоматически",
+          "value": ""
+        },
+        {
+          "label": "int sumOdd(int)",
+          "value": "sumOdd(int)"
+        },
+        {
+          "label": "int twice(int)",
+          "value": "twice(int)"
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "msedge",
+    "browserVersion": "154.0.0.0",
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "setWindowRect": true,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    }
+  },
+  "nativeRuntime": {
+    "clangToolchainArgument": "src-tauri/target/debug/toolchain",
+    "contextDigest": "e8395a56d3f8cd813a8b7ebfdcb97259e944df318116a036509696df9bfb132c",
+    "executable": "\\\\?\\src-tauri\\target\\debug\\analyzer\\flowsketch-analyzer.exe",
+    "jobMemoryLimitBytes": 1073741824,
+    "sourceExecuted": false,
+    "timeoutSeconds": 15,
+    "toolchain": "\\\\?\\src-tauri\\target\\debug\\toolchain"
+  },
+  "success": false,
+  "error": "Error: worker font layout and actual Clang: {\"body\":\"Перейти к рабочей области\\nFlowSketch\\ninput\\nЕсть изменения\\nКод → схема\\nОформление\\nСохранить\\nЭкспорт SVG\\nВставить код\\nОткрыть .cpp\\ninput.cpp\\nC++17\\nФункция\\nАвтоматически\\nint sumOdd(int)\\nint twice(int)\\n1\\n2\\n3\\n4\\n5\\n6\\n7\\n8\\n9\\n10\\n11\\n// Кириллица: сумма нечётных\\nint sumOdd(int n) {\\n    int s = 0;\\n    for (int i = 1; i <= n; ++i) {\\n        if (i % 2 == 0) continue;\\n        s += i;\\n    }\\n    return s;\\n}\\nint twice(int n) { return n * 2; }\\nДиагностика · 1\\n\\nLAYOUT_FAILEDo is not a constructor\\n\\nПостроить схему\\nCtrl+Enter\\nИсходный код разбирается локально, без запуска.\\nБлок-схема\\n10 блоков\\nОт кода к ясной схеме\\n\\nИсправьте отмеченные ошибки или выберите поддерживаемую функцию и повторите построение.\\n\\nПостроить схему\\nСхема не построена\\nC++17 · учебные функции\\ninput.cpp\",\"desktop\":true,\"diagnostics\":[\"LAYOUT_FAILEDo is not a constructor\"],\"digest\":null,\"exportEnabled\":false,\"nodes\":[],\"overflow\":false,\"scene\":null,\"title\":\"input\",\"url\":\"http://tauri.localhost/\",\"viewport\":{\"dpr\":1.25,\"height\":900,\"width\":1440}}\n    at waitFor (file:///scripts/tauri-e2e.mjs:23:193)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async file:///scripts/tauri-e2e.mjs:49:15",
+  "state": {
+    "body": "Перейти к рабочей области\nFlowSketch\ninput\nЕсть изменения\nКод → схема\nОформление\nСохранить\nЭкспорт SVG\nВставить код\nОткрыть .cpp\ninput.cpp\nC++17\nФункция\nАвтоматически\nint sumOdd(int)\nint twice(int)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n// Кириллица: сумма нечётных\nint sumOdd(int n) {\n    int s = 0;\n    for (int i = 1; i <= n; ++i) {\n        if (i % 2 == 0) continue;\n        s += i;\n    }\n    return s;\n}\nint twice(int n) { return n * 2; }\nДиагностика · 1\n\nLAYOUT_FAILEDo is not a constructor\n\nПостроить схему\nCtrl+Enter\nИсходный код разбирается локально, без запуска.\nБлок-схема\n10 блоков\nОт кода к ясной схеме\n\nИсправьте отмеченные ошибки или выберите поддерживаемую функцию и повторите построение.\n\nПостроить схему\nСхема не построена\nC++17 · учебные функции\ninput.cpp",
+    "desktop": true,
+    "diagnostics": [
+      "LAYOUT_FAILEDo is not a constructor"
+    ],
+    "digest": null,
+    "exportEnabled": false,
+    "nodes": [],
+    "overflow": false,
+    "scene": null,
+    "title": "input",
+    "url": "http://tauri.localhost/",
+    "viewport": {
+      "dpr": 1.25,
+      "height": 900,
+      "width": 1440
+    }
+  }
+}

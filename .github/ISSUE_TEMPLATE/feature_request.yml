@@ -1,0 +1,15 @@
+name: Feature or roadmap proposal
+description: Propose a focused improvement
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Problem and proposed behavior
+      description: Explain the user need, a concrete example and the relevant roadmap ID if any.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How should this be verified?
+      description: Expected transitions, supported/unsupported cases, UX behavior or export criteria.

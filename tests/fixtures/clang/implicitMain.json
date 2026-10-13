@@ -1,0 +1,155 @@
+{
+  "id": "implicitMain",
+  "title": "main",
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "terminator",
+      "label": "Конец · return 0",
+      "sourceRange": {
+        "file": "implicitMain.cpp",
+        "begin": {
+          "offset": 10,
+          "line": 1,
+          "column": 11
+        },
+        "end": {
+          "offset": 24,
+          "line": 1,
+          "column": 25
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n2",
+      "kind": "terminator",
+      "label": "Начало",
+      "sourceRange": {
+        "file": "implicitMain.cpp",
+        "begin": {
+          "offset": 10,
+          "line": 1,
+          "column": 11
+        },
+        "end": {
+          "offset": 24,
+          "line": 1,
+          "column": 25
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": true,
+        "originKind": "CompoundStmt"
+      },
+      "originalText": null,
+      "astKind": "CompoundStmt",
+      "reachable": true
+    },
+    {
+      "id": "n3",
+      "kind": "process",
+      "label": "++x",
+      "sourceRange": {
+        "file": "implicitMain.cpp",
+        "begin": {
+          "offset": 19,
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "offset": 22,
+          "line": 1,
+          "column": 23
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "UnaryOperator"
+      },
+      "originalText": "++x",
+      "astKind": "UnaryOperator",
+      "reachable": true
+    },
+    {
+      "id": "n4",
+      "kind": "process",
+      "label": "int x=1",
+      "sourceRange": {
+        "file": "implicitMain.cpp",
+        "begin": {
+          "offset": 11,
+          "line": 1,
+          "column": 12
+        },
+        "end": {
+          "offset": 19,
+          "line": 1,
+          "column": 20
+        },
+        "endExclusive": true,
+        "offsetEncoding": "utf8-bytes",
+        "columnEncoding": "utf8-bytes",
+        "synthetic": false,
+        "originKind": "DeclStmt"
+      },
+      "originalText": "int x=1;",
+      "astKind": "DeclStmt",
+      "reachable": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "target": "n1",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "target": "n3",
+      "label": "",
+      "role": "normal"
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "target": "n4",
+      "label": "",
+      "role": "normal"
+    }
+  ],
+  "status": "BUILT_NORMAL_FLOW",
+  "abstractions": [],
+  "diagnostics": [],
+  "entryId": "n2",
+  "exitId": "n1",
+  "coverage": {
+    "profile": "experimental-scalar-ast-adapter-v1",
+    "scope": "selected-function normal flow",
+    "sourceExecution": false,
+    "implicitMainReturn": 0,
+    "notImplemented": [
+      "STL profiles",
+      "RAII",
+      "exceptions",
+      "macros",
+      "templates",
+      "range-for",
+      "if-init",
+      "noreturn",
+      "production analyzer protocol"
+    ]
+  }
+}
